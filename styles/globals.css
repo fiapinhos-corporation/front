@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Inter';
 }
 
+header, section, footer{
+}
 :root{
-    --primary-color: #0095c6;
+    --primary-color: #0095c6;   
+    --second-color: #0054ff;
+    --black: #131313;
+    --cyan: #448a99;
+    /* font sizes */
+    --xl: 72px;
+    --l: 36px;
+    --b: 24px;
+    --s: 14px;
+    --xs: 12px;
 }
