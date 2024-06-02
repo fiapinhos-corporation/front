@@ -1,0 +1,77 @@
+body{
+    background-color: #68b5e2;
+}
+.cabecalho{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    border-radius: 0 0px 20px 20px;
+    background-color: #c6e7fa6e;
+}
+.container{
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.btnLoginCadastro{
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+.btn{
+    border-radius: 10px;
+    width: 10vw;
+    height: 3vh;
+    border: none;
+    background-color: var(--primary-color);
+}
+.around{
+    border-radius: 5px;
+    background-color: #d5ecfa;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 10px 10px rgba(65, 64, 64, 0.452);
+}
+.form{
+    
+    display: flex;
+    width: 30vw;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fieldset{
+    border: none;
+}
+.form-group{  
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+.btnSubmit{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.form-login{
+    display: none;
+}
+.input{
+    border: inset 10px transparent ;
+    background-color: #c4c2c2;
+    border-radius: 20px;
+    font-size: 14px;
+    
+}
+label{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

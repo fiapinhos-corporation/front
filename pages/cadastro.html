@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 </head>
+<link rel="stylesheet" href="../styles/globals.css">
+<link rel="stylesheet" href="../styles/cadastro.css">
 <body>
+    <header class="cabecalho">
+        <h1>Fiapinhos</h1>
+    </header>
     <div class="container">
-        <header class="header">
-            <h1>Sistema de login</h1>
-        </header>
+        <div class="around">
         <div class="btnLoginCadastro">
-            <button id="button-cadastro">Cadastro</button>
-            <button id="button-login">Login</button>
+            <button class="btn btn-cadastro" id="button-cadastro">Cadastro</button>
+            <button class="btn btn-login" id="button-login">Login</button>
         </div>
-            <div class="form-cadastro"> 
+            <div class="form form-cadastro"> 
                 <form 
                 action=""
                 method=""
                 onsubmit="">
-                <fieldset>
+                <fieldset class="fieldset">
                     <span id="valida" class="valida"></span>
                     <div class="form-group">
                             <label class="" for="idEmail">Email</label>
@@ -81,13 +84,14 @@
                             id="idTelefone"
                             placeholder="Digite seu Telefone"
                             >
-                        <div>
-                            <button class="btnEnviar" type="submit">Enviar</button>
+                        <div class="btnSubmit">
+                            <button class=" btn btnEnviar" type="submit">Cadastrar</button>
                         </div>
                     </div>
                 </fieldset>
                 </form> 
-                    <div class="form-login"> 
+            </div>
+                    <div class="form form-login"> 
                         <form 
                         action=""
                         method=""
@@ -111,8 +115,8 @@
                                     id="idSenha"
                                     placeholder="Digite sua senha"
                                     >
-                                <div>
-                                    <button class="btnEnviar" type="submit">Enviar</button>
+                                <div class="btn">
+                                    <button class="btnEnviar" type="submit">Login</button>
                                 </div>
                             </div>
                         </fieldset>
