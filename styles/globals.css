@@ -6,13 +6,12 @@
     font-family: 'Inter';
 }
 
-header, section, footer{
-}
 :root{
     --primary-color: #0095c6;   
     --second-color: #0054ff;
     --black: #131313;
     --cyan: #448a99;
+    --green: #081B15;
     /* font sizes */
     --xl: 72px;
     --l: 36px;

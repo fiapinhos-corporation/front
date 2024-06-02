@@ -28,6 +28,7 @@ header h2{
     font-weight: 400;
     color: var(--primary-color);
 }
+
 header:not(.h-transparent) h2{
     color: white;
 }
