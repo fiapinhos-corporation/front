@@ -14,13 +14,13 @@
     <div class="container">
         <div class="around">
         <div class="btnLoginCadastro">
-            <button class="btn btn-cadastro" id="button-cadastro">Cadastro</button>
+            <button class="btn btn-cadastro active" id="button-cadastro">Cadastro</button>
             <button class="btn btn-login" id="button-login">Login</button>
         </div>
             <div class="form form-cadastro"> 
                 <form 
                 action=""
-                method=""
+                method="get"
                 onsubmit="">
                 <fieldset class="fieldset">
                     <span id="valida" class="valida"></span>
@@ -89,39 +89,46 @@
                         </div>
                     </div>
                 </fieldset>
+                </form>
+            </div>
+        </div>
+            <div class="around none">
+                <div class="btnLogin">
+                    <button class="btn btn-cadastro" id="button-cadastro">Cadastro</button>
+                    <button class="btn btn-login active" id="button-login">Login</button>
+                </div> 
+            <div class="form-login"> 
+                <form 
+                action=""
+                method=""
+                onsubmit="">
+                <fieldset class="fieldset">
+                    <span id="valida" class="valida"></span>
+                    <div class="form-group">
+                            <label class="" for="idEmail">Email</label>
+                            <input
+                            class="input"
+                            type="email"
+                            name="txtEmail"
+                            id="idEmail"
+                            placeholder="Digite o seu Email aqui"
+                            oninvalid="this.setCustomValidity('Email inválido.')">
+                            <label class="" for="idSenha">Senha</label>
+                            <input
+                            class="input"
+                            type="password"
+                            name="txtSenha"
+                            id="idSenha"
+                            placeholder="Digite sua senha"
+                            >
+                        <div class="btnSubmit">
+                            <button class=" btn btnEnviar" type="submit">Login</button>
+                        </div>
+                    </div>
+                </fieldset>
                 </form> 
             </div>
-                    <div class="form form-login"> 
-                        <form 
-                        action=""
-                        method=""
-                        onsubmit="">
-                        <fieldset>
-                            <span id="valida" class="valida"></span>
-                            <div class="form-group">
-                                    <label class="" for="idEmail">Email</label>
-                                    <input
-                                    class="input"
-                                    type="email"
-                                    name="txtEmail"
-                                    id="idEmail"
-                                    placeholder="Digite o seu Email aqui"
-                                    oninvalid="this.setCustomValidity('Email inválido.')">
-                                    <label class="" for="idSenha">Senha</label>
-                                    <input
-                                    class="input"
-                                    type="password"
-                                    name="txtSenha"
-                                    id="idSenha"
-                                    placeholder="Digite sua senha"
-                                    >
-                                <div class="btn">
-                                    <button class="btnEnviar" type="submit">Login</button>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
-            </div>
     </div>
+
 </body>
 </html>
