@@ -9,8 +9,12 @@
     <div class="container">
         <header class="header">
             <h1>Sistema de login</h1>
-        </header>   
-            <div class="form"> 
+        </header>
+        <div class="btnLoginCadastro">
+            <button id="button-cadastro">Cadastro</button>
+            <button id="button-login">Login</button>
+        </div>
+            <div class="form-cadastro"> 
                 <form 
                 action=""
                 method=""
@@ -79,7 +83,37 @@
                         </div>
                     </div>
                 </fieldset>
-                </form>
+                </form> 
+                    <div class="form-login"> 
+                        <form 
+                        action=""
+                        method=""
+                        onsubmit="">
+                        <fieldset>
+                            <span id="valida" class="valida"></span>
+                            <div class="form-group">
+                                    <label class="" for="idEmail">Email</label>
+                                    <input
+                                    class="input"
+                                    type="email"
+                                    name="txtEmail"
+                                    id="idEmail"
+                                    placeholder="Digite o seu Email aqui"
+                                    oninvalid="this.setCustomValidity('Email inválido.')">
+                                    <label class="" for="idSenha">Senha</label>
+                                    <input
+                                    class="input"
+                                    type="password"
+                                    name="txtSenha"
+                                    id="idSenha"
+                                    placeholder="Digite sua senha"
+                                    >
+                                <div>
+                                    <button class="btnEnviar" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                        </form>
             </div>
     </div>
 </body>
