@@ -33,3 +33,24 @@
     flex-direction: column;
     row-gap:40px;
 }
+
+#ajude{
+    background: url(../../assets/images/ajude.webp);
+    background-repeat: no-repeat ;
+    background-size: cover ;
+}
+#ajude .wrapper{
+    display: flex;
+    justify-content: left;
+}
+#ajude .wrapper #help-content{
+    display: flex;    
+    width: 40%;
+    justify-content: left;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+#ajude h2{
+    font-size: var(--xl) !important;
+}
