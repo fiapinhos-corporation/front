@@ -1,0 +1,86 @@
+@import url(./globals.css);
+footer{
+    background-color: var(--primary-color);
+    color: white;
+}
+footer .wrapper{
+    max-width: 1220px;
+    padding: 50px;
+    margin: 0 auto;
+}
+footer .final-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+footer .final-footer h3{
+    font-size: var(--l);
+    font-weight: 400;
+}
+footer .final-footer button{
+    background-color: white;
+    color: var(--green);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 24px;
+    border-radius: 22px;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer nav p{
+    display: block;
+    max-width: 400px;
+    width: max-content;
+    font-size: 18px;
+}
+footer table{
+    color: white;
+    width: max-content;
+}
+footer table thead tr{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+footer table tbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: 10px 0;
+    gap: 20px;
+
+}
+footer table tr{
+    text-align: center;
+}
+footer table tbody tr, footer table thead tr{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer table thead tr th{
+    width: 88px;
+    align-self: center;
+    justify-self: center;
+    margin: 0 15px;
+}
+footer table thead{
+    gap: 20px;
+}
+footer table tbody tr td{
+    width: 88px;
+    align-self: center;
+    justify-self: center;
+    margin: 0 15px;
+}
+
+
+
+
+
