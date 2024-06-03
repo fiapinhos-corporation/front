@@ -16,13 +16,26 @@
     height:100px;
 }
 
+#ajude{
+    width: 100%;
+}
+
 .ajude{
     position: relative;
 }
 
-#ajude{
-    width: 1349px;
+.texto-ajude{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
 }
 
-.help{
+#lixo{
+    background-color: #0095c6;
+    color: white;
+    border-radius: 25px;
+    border: none;
 }
