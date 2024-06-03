@@ -30,6 +30,3 @@ section h4{
     font-size: var(--xs);
     font-weight: 200;
 }
-.highlight{
-    color: var(--third-color);
-}

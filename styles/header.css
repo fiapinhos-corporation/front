@@ -14,13 +14,14 @@ header nav{
 header nav ul{
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
     color: white;
 }
 header nav a{
     text-decoration: none;
     color: black;
+    transition: 0.6s ease-in-out;
 }
 
 header h2{
@@ -36,6 +37,11 @@ header:not(.h-transparent) h2{
 header nav ul li{
     font-size: 20px;
     color: white;
+    transition: 0.6s ease-in-out;
+}
+header nav a:hover{
+    transition: 0.6s ease-in-out;
+    transform: scale(1.25);
 }
 
 header:not(.h-transparent){

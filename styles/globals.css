@@ -20,3 +20,7 @@
     --s: 14px;
     --xs: 12px;
 }
+
+.highlight{
+    color: var(--third-color);
+}
