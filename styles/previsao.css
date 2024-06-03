@@ -39,3 +39,10 @@
     border-radius: 25px;
     border: none;
 }
+
+#inputkg{
+    border-radius: 25px;
+    background-color: #0095c6;
+    color: white;
+    border: none;
+}
