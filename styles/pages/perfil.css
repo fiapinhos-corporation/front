@@ -1,0 +1,20 @@
+.container{
+    height: 100vh;
+    background-position-y: 10%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/profile_image.png);
+}
+.conteudo{
+    height: 100vh;
+}
+.section-top{
+    height: 65vh;   
+}
+.textos{
+    color: white; 
+}
+.textos h1{
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
