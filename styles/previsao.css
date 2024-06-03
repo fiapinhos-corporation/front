@@ -1,8 +1,17 @@
 @import url(./globals.css);
 
-.valor{
+.valorkg{
+    background-color: #05C3FF;
+    width: 200px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .highlight{
     color: #05C3FF;
+}
+
+#cans{
+    height:100px;
 }
