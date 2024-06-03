@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/pages/perfil.css">
+
+    <title>Perfil</title>
+</head>
+<body>
+    <div class="container">
+    <header class="">
+        <nav>
+            <a href="">
+                <h2>Fiapinhos</h2>
+            </a>
+            <ul>
+                <a href="">
+                    <li>Ajude</li>
+                </a>
+                <a href="">
+                    <li>Espécies ameaçadas</li>
+                </a>
+                <a href="">
+                    <li>Denuncie</li>
+                </a>
+            </ul>
+            <a href="./perfil.html"><img id="profile" src="../assets/images/profile.svg" alt="Imagem do perfil da pessoa"></a>
+        </nav>
+    </header>
+    <div class="conteudo">
+        <section class="section-top">
+            <div class="wrapper">
+            <main>   
+            <div class="textos">
+                <h1>Nome: <span>Nome</span></h1>
+                <h1>Conta criada desde 2024</h1>
+                <h1>Pontos:<span>500</span></h1>
+            </main>
+            </div>
+            <aside>
+                <img class="img-profile" src="../assets/images/profile.svg" alt="Imagem de perfil da pessoa.">
+            </aside>
+        </div>
+        </section>
+        <section class="section-bottom">
+            <div class="wrapper-bottom">
+                <div class="left">
+                    <button class="btnConfiguracao">Configurações</button>
+                </div>
+                <div class="right">
+                    <div class="form form-cadastro"> 
+                        <form 
+                        action=""
+                        method="get"
+                        onsubmit="">
+                        <fieldset class="fieldset">
+                            <span id="valida" class="valida"></span>
+                            <div class="form-group">
+                                    <label class="" for="idEmail">Email</label>
+                                    <input
+                                    class="input"
+                                    type="email"
+                                    name="txtEmail"
+                                    id="idEmail"
+                                    placeholder="Digite o seu Email aqui"
+                                    oninvalid="this.setCustomValidity('Email inválido.')">
+                                    <label class="" for="idSenha">Senha</label>
+                                    <input
+                                    class="input"
+                                    type="password"
+                                    name="txtSenha"
+                                    id="idSenha"
+                                    placeholder="Digite sua senha"
+                                    >
+                                    <label class="" for="idSenhaAux">Confirme Senha</label>
+                                    <input
+                                    class="input"
+                                    type="password"
+                                    name="txtCPF"
+                                    id="idSenhaAux"
+                                    placeholder="Digite sua senha"
+                                    >
+                                    <label class="" for="idCPF">CPF</label>
+                                    <input
+                                    class="input"
+                                    type="text"
+                                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                                    name="txtCPF"
+                                    id="idCPF"
+                                    placeholder="Digite seu CPF"
+                                    >
+                                    <label class="" for="idEndereco">Endereco</label>
+                                    <input
+                                    class="input"
+                                    type="text"
+                                    name="txtEndereco"
+                                    id="idEndereco"
+                                    placeholder="Digite seu endereço"
+                                    >
+                                    <label class="" for="idCEP">CEP</label>
+                                    <input
+                                    class="input"
+                                    type="text"
+                                    pattern="\d{5}-\d{3}"
+                                    name="txtCEP"
+                                    id="idCEP"
+                                    placeholder="Digite seu CEP"
+                                    >
+                                    <label class="" for="idTelefone">Telefone</label>
+                                    <input
+                                    class="input"
+                                    type="text"
+                                    pattern="\(\d{2}\)\d{5}-\d{4}"
+                                    name="txtTelefone"
+                                    id="idTelefone"
+                                    placeholder="Digite seu Telefone"
+                                    >
+                                <div class="btnSubmit">
+                                    <button class=" btn btnEnviar" type="submit">Salvar</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+</body>
+</html>
