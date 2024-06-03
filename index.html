@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <title>Fiapinhos</title>
+    <!-- componentes -->
     <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/pages/index.css">
     <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/chatbot.css">
+    <link rel="stylesheet" href="./styles/button.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
+    <!-- página index -->
+    <link rel="stylesheet" href="./styles/pages/index.css">
 </head>
 
 <body>
     <button class="chat">
-        <img src="./assets/icons/message.webp" alt="">
+        <img src="./assets/icons/message.svg" alt="">
     </button>
     <header class="h-transparent">
         <nav>
@@ -35,15 +41,100 @@
         </nav>
     </header>
     <section id="hero-home" class="hero-transparent">
-        <div>
+        <div class="wrapper">
             <h1>Ajude quem está <span class="highlight">ameaçado</span></h1>
-            <h2>Nosso objetivo como os <span class="highlight">Fiapinhos</span> é ajudar a resolver um importante problema:
+            <h2>Nosso objetivo como os <span class="highlight">Fiapinhos</span> é ajudar a resolver um importante
+                problema:
                 as espécies marítmas ameaçadas de extinção</h2>
         </div>
     </section>
-    <section class="hero">
-        <h2><span class="highlight">694</span>espécies</h2>
+
+    <section class="hero-transparent" id="especies-ameacadas">
+        <div class="wrapper">
+            <aside>
+                <h2 class="subtitle"><span class="highlight">694</span><br>espécies</h2>
+            </aside>
+            <main>
+                <h2>694 espécies marítimas ameaçadas de extinção. Principal motivo? Ação do homem.</h2>
+                <h4>*Segundo estudo da IUCN</h4>
+                <button>Saiba mais</button>
+            </main>
+        </div>
     </section>
+    <section class="hero-transparent" id="ajude">
+        <div class="wrapper">
+            <div class="wrapper-content">
+                <h2>Ajude quem está <span class="highlight">ameaçado</span></h2>
+                <h3>Mesmo que ache que é pouco, se cada um o fizer, ajudamos para um mundo melhor. Você sabe como
+                    descartar
+                    corretamente seu lixo?</h3>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+    </section>
+    <section class="hero-transparent" id="denuncie">
+        <div class="wrapper">
+            <div class="wrapper-content">
+                <h2>DENUNCIE
+                    <span class="highlight">AGORA</span></h2>
+                <h3>Além do descarte, ajudamos por denunciar lixo descartado incorretamente. Lembre-se: isso é CRIME.
+                </h3>
+                <button>Saiba como denunciar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <nav>
+                <p>Nosso objetivo como os <span class="highlight">Fiapinhos</span> é ajudar a resolver um importante problema: as espécies marítmas
+                    ameaçadas de extinção</p>
+                <table class="footer-pages">
+                    <thead>
+                        <tr>
+                            <th>Espécies ameaçadas</th>
+                            <th>Denuncie</th>
+                            <th>Ajude</th>
+                            <th>Loja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                        </tr>
+                        <tr>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                        </tr>
+                        <tr>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                        </tr>
+                        <tr>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+            <br><br>
+            <hr>
+            <br>
+            <div class="final-footer">
+                <h3>Fiapinhos</h3>
+                <button class="contact-btn">Entre em contato</button>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
