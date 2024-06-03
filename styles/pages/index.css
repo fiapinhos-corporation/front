@@ -40,10 +40,9 @@
     background-size: cover ;
 }
 #ajude .wrapper{
-    display: flex;
     justify-content: left;
 }
-#ajude .wrapper #help-content{
+#ajude .wrapper .wrapper-content{
     display: flex;    
     width: 40%;
     justify-content: left;
@@ -51,6 +50,35 @@
     row-gap: 40px;
 }
 
-#ajude h2{
+#ajude h2, #denuncie h2{
     font-size: var(--xl) !important;
+}
+#denuncie{
+    background: url(../../assets/images/denuncie.webp);
+    background-repeat: no-repeat ;
+    background-size: cover ;
+}
+#denuncie .wrapper button{
+    max-width: 380px !important;
+}
+
+#denuncie .wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: right !important;
+    margin-top: 120px;
+}
+#denuncie .wrapper .wrapper-content{
+    display: flex;    
+    width: 40%;
+    justify-content: right;
+    justify-self: right;
+    flex-direction: column;
+    row-gap: 40px;
+    
+}
+
+#denuncie h2 .highlight{
+    color: var(--black) !important;
 }
