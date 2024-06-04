@@ -47,7 +47,7 @@
         <section class="section-bottom">
             <div class="wrapper-bottom">
                 <div class="left">
-                    <button class="btnConfiguracao">Configurações</button>
+                    <p class="configuracao">Configurações</p>
                 </div>
                 <div class="right">
                     <div class="form form-cadastro"> 
@@ -64,7 +64,8 @@
                                     type="email"
                                     name="txtEmail"
                                     id="idEmail"
-                                    placeholder="Digite o seu Email aqui"
+                                    placeholder="GefersonBraga@email.com"
+                                    disabled
                                     oninvalid="this.setCustomValidity('Email inválido.')">
                                     <label class="" for="idSenha">Senha</label>
                                     <input
@@ -74,14 +75,6 @@
                                     id="idSenha"
                                     placeholder="Digite sua senha"
                                     >
-                                    <label class="" for="idSenhaAux">Confirme Senha</label>
-                                    <input
-                                    class="input"
-                                    type="password"
-                                    name="txtCPF"
-                                    id="idSenhaAux"
-                                    placeholder="Digite sua senha"
-                                    >
                                     <label class="" for="idCPF">CPF</label>
                                     <input
                                     class="input"
@@ -89,7 +82,8 @@
                                     pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
                                     name="txtCPF"
                                     id="idCPF"
-                                    placeholder="Digite seu CPF"
+                                    disabled
+                                    placeholder="123.123.123-12"
                                     >
                                     <label class="" for="idEndereco">Endereco</label>
                                     <input
@@ -97,7 +91,8 @@
                                     type="text"
                                     name="txtEndereco"
                                     id="idEndereco"
-                                    placeholder="Digite seu endereço"
+                                    disabled
+                                    placeholder="Rua dos Jatobas"
                                     >
                                     <label class="" for="idCEP">CEP</label>
                                     <input
@@ -106,7 +101,8 @@
                                     pattern="\d{5}-\d{3}"
                                     name="txtCEP"
                                     id="idCEP"
-                                    placeholder="Digite seu CEP"
+                                    disabled
+                                    placeholder="12345-123"
                                     >
                                     <label class="" for="idTelefone">Telefone</label>
                                     <input
@@ -115,7 +111,8 @@
                                     pattern="\(\d{2}\)\d{5}-\d{4}"
                                     name="txtTelefone"
                                     id="idTelefone"
-                                    placeholder="Digite seu Telefone"
+                                    disabled
+                                    placeholder="(11)12345-1234"
                                     >
                                 <div class="btnSubmit">
                                     <button class=" btn btnEnviar" type="submit">Salvar</button>
