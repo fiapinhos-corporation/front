@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/pages/perfil.css">
+    <script src="../scripts/perfil.js" defer></script>
 
     <title>Perfil</title>
 </head>
@@ -34,9 +35,9 @@
             <div class="wrapper">
             <main>   
             <div class="textos">
-                <h1>Nome: <span>Nome</span></h1>
+                <h1>Nome: <span id="nomeUser"></span></h1>
                 <h1>Conta criada desde 2024</h1>
-                <h1>Pontos:<span>500</span></h1>
+                <h1>Pontos:<span id="pontosUser"></span></h1>
             </main>
             </div>
             <aside>
@@ -73,6 +74,7 @@
                                     type="password"
                                     name="txtSenha"
                                     id="idSenha"
+                                    disabled
                                     placeholder="***********"
                                     >
                                     <label class="" for="idCPF">CPF</label>
@@ -115,7 +117,7 @@
                                     placeholder="(11)12345-1234"
                                     >
                                 <div class="btnSubmit">
-                                    <button class=" btn btnEnviar" type="submit">Salvar</button>
+                                    <button class=" btn btnEnviar">Sair</button>       
                                 </div>
                             </div>
                         </fieldset>

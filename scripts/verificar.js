@@ -1,5 +1,5 @@
 /* Esse js serve para verificar se o user ta logado.*/
-let usuario = JSON.parse(localStorage.getItem("usuario-logado"));
+let usuario = JSON.parse(localStorage.getItem("user"));
 
 if(usuario){
 console.log("User logado");

@@ -6,7 +6,8 @@ let listaUsuario = [
       cpf:"123.123.123-11",
       endereco: "Rua são joaquin",
       cep: "12345-123",
-      telefone: "11 12345-1234"
+      telefone: "11 12345-1234",
+      pontos: 2000
     },
     {
       nome: "Felipe Ribeiro",
@@ -15,7 +16,8 @@ let listaUsuario = [
       cpf:"123.123.123-11",
       endereco: "Rua são joaquin",
       cep: "12345-123",
-      telefone: "11 12345-1234"
+      telefone: "11 12345-1234",
+      pontos: 1000
     },
     {
       nome: "Enrico Del Guerra",
@@ -24,7 +26,8 @@ let listaUsuario = [
       cpfUsuario:"123.123.123-11",
       enderecoUsuario: "Rua são joaquin",
       cepUsuario: "12345-123",
-      telefoneUsuario: "11 12345-1234"
+      telefoneUsuario: "11 12345-1234",
+      pontos: 3000
     },
   ];
 
@@ -41,7 +44,7 @@ let listaUsuario = [
             msgStatus.innerText = "Login realizado com sucesso!";
     
             
-            localStorage.setItem("usuario-logado", JSON.stringify(listaUsuario[x]));
+            localStorage.setItem("user", JSON.stringify(listaUsuario[x]));
             
             setTimeout(function(){
                 msgStatus.setAttribute("class","valida");
@@ -76,7 +79,8 @@ function cadastrar(inputNome, inputEmail, inputSenha,inputSenhaAux, inputCPF,inp
             cpfUsuario: inputCPF.value,
             enderecoUsuario: inputEndereco.value,
             cepUsuario: inputCEP.value,
-            telefoneUsuario: inputTelefone.value
+            telefoneUsuario: inputTelefone.value,
+            pontos: 2000
         }
         listaUsuario.push(user)
 
