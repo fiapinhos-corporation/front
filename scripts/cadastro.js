@@ -94,3 +94,21 @@ function cadastrar(inputNome, inputEmail, inputSenha,inputSenhaAux, inputCPF,inp
       },5000)
         return false;
     }
+
+    let btnLoginUp = document.getElementById("button-loginTop")
+    let btnCadastro = document.getElementById("button-cadastroDown")
+    let divCadastro = document.getElementById("divCadastro")
+    let divLogin = document.getElementById("divLogin")
+
+    btnLoginUp.addEventListener("click",function(){
+      if(divLogin.classList.contains("none")){
+        divLogin.classList.remove("none")
+        divCadastro.classList.add("none")
+      }
+    })
+    btnCadastro.addEventListener("click", function(){
+      if(divCadastro.classList.contains("none")){
+        divCadastro.classList.remove("none")
+        divLogin.classList.add("none")
+      }
+    })
