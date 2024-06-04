@@ -61,6 +61,36 @@ let listaUsuario = [
         return false;
 }
 
-function cadastrar(inputEmail, inputSenha,inputSenhaAux, inputCPF,inputEndereco,inputCEP,inputTelefone){
-    
-}
+function cadastrar(inputNome, inputEmail, inputSenha,inputSenhaAux, inputCPF,inputEndereco,inputCEP,inputTelefone){
+    let msgStatus = document.querySelector(".valida")
+
+    if(inputSenha.value == inputSenhaAux.value){
+        msgStatus.setAttribute("class","sucesso");
+        msgStatus.innerText = "Cadastro realizado com sucesso!";
+
+        user = 
+            {
+            nome: inputNome.value,
+            emailUsuario: inputEmail.value,
+            senhaUsuario: inputSenha.value,
+            cpfUsuario: inputCPF.value,
+            enderecoUsuario: inputEndereco.value,
+            cepUsuario: inputCEP.value,
+            telefoneUsuario: inputTelefone.value
+        }
+        listaUsuario.push(user)
+
+        setTimeout(function(){
+            msgStatus.setAttribute("class","valida");
+            msgStatus.innerText = "";
+        }, 5000);
+        return false;
+    }
+    msgStatus.setAttribute("class","erro");
+    msgStatus.innerText = "Você inseriu a senha ou o email errado";
+    setTimeout(function(){
+      msgStatus.innerText = "";
+      msgStatus.removeAttribute("class","erro")
+      },5000)
+        return false;
+    }

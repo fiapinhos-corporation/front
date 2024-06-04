@@ -22,10 +22,17 @@
                 <form 
                 action="./cadastro.html"
                 method="get"
-                onsubmit="">
+                onsubmit="return cadastrar(idNome,idEmail,idSenha,idSenhaAux,idCPF,idEndereco,idCEP,idTelefone  )">
                 <fieldset class="fieldset">
                     <span id="valida" class="valida"></span>
                     <div class="form-group">
+                            <label class="" for="idNome">Nome</label>
+                            <input
+                            class="input"
+                            type="text"
+                            name="txtNome"
+                            id="idNome"
+                            placeholder="Digite o seu nome aqui">
                             <label class="" for="idEmail">Email</label>
                             <input
                             class="input"
@@ -48,7 +55,7 @@
                             type="password"
                             name="txtCPF"
                             id="idSenhaAux"
-                            placeholder="Digite sua senha"
+                            placeholder="Confirme sua senha"
                             >
                             <label class="" for="idCPF">CPF</label>
                             <input
@@ -93,7 +100,7 @@
                 </form>
             </div>
         </div>
-            <div class="around none">
+            <div class="around">
                 <div class="btnLogin">
                     <button class="btn btn-cadastro" id="button-cadastro">Cadastro</button>
                     <button class="btn btn-login active" id="button-login">Login</button>
@@ -106,20 +113,20 @@
                 <fieldset class="fieldset">
                     <span id="valida" class="valida"></span>
                     <div class="form-group">
-                            <label class="label-Email" for="idEmail">Email</label>
+                            <label class="label-Email" for="idEmailLogin">Email</label>
                             <input
                             class="input"
                             type="email"
                             name="txtEmail"
-                            id="idEmail"
+                            id="idEmailLogin"
                             placeholder="Digite o seu Email aqui"
                             oninvalid="this.setCustomValidity('Email inválido.')">
-                            <label class="label-senha" for="idSenha">Senha</label>
+                            <label class="label-senha" for="idSenhaLogin">Senha</label>
                             <input
                             class="input"
                             type="password"
                             name="txtSenha"
-                            id="idSenha"
+                            id="idSenhaLogin"
                             placeholder="Digite sua senha"
                             >
                         <div class="btnSubmit">
