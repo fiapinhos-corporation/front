@@ -7,6 +7,7 @@
 </head>
 <link rel="stylesheet" href="../styles/globals.css">
 <link rel="stylesheet" href="../styles/pages/cadastro.css">
+<script src="../scripts/cadastro.js" defer></script>
 <body>
     <header class="cabecalho">
         <h1>Fiapinhos</h1>
@@ -19,7 +20,7 @@
         </div>
             <div class="form form-cadastro"> 
                 <form 
-                action=""
+                action="./cadastro.html"
                 method="get"
                 onsubmit="">
                 <fieldset class="fieldset">
@@ -99,13 +100,13 @@
                 </div> 
             <div class="form-login"> 
                 <form 
-                action=""
-                method=""
-                onsubmit="">
+                action="./cadastro.html"
+                method="get"
+                onsubmit="return validar(idEmail, idSenha)">
                 <fieldset class="fieldset">
                     <span id="valida" class="valida"></span>
                     <div class="form-group">
-                            <label class="" for="idEmail">Email</label>
+                            <label class="label-Email" for="idEmail">Email</label>
                             <input
                             class="input"
                             type="email"
@@ -113,7 +114,7 @@
                             id="idEmail"
                             placeholder="Digite o seu Email aqui"
                             oninvalid="this.setCustomValidity('Email inválido.')">
-                            <label class="" for="idSenha">Senha</label>
+                            <label class="label-senha" for="idSenha">Senha</label>
                             <input
                             class="input"
                             type="password"
@@ -122,7 +123,7 @@
                             placeholder="Digite sua senha"
                             >
                         <div class="btnSubmit">
-                            <button class=" btn btnEnviar" type="submit">Login</button>
+                            <button class="btn btnEnviar" type="submit">Login</button>
                         </div>
                     </div>
                 </fieldset>
