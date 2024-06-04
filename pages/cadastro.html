@@ -13,10 +13,10 @@
         <h1>Fiapinhos</h1>
     </header>
     <div class="container">
-        <div class="around">
+        <div class="around" id="divCadastro">
         <div class="btnLoginCadastro">
-            <button class="btn btn-cadastro active" id="button-cadastro">Cadastro</button>
-            <button class="btn btn-login" id="button-login">Login</button>
+            <button class="btn btn-cadastroT active" id="button-cadastroTop">Cadastro</button>
+            <button class="btn btn-login" id="button-loginTop">Login</button>
         </div>
             <div class="form form-cadastro"> 
                 <form 
@@ -100,16 +100,16 @@
                 </form>
             </div>
         </div>
-            <div class="around">
+            <div class="around none" id="divLogin">
                 <div class="btnLogin">
-                    <button class="btn btn-cadastro" id="button-cadastro">Cadastro</button>
+                    <button class="btn btn-cadastro" id="button-cadastroDown">Cadastro</button>
                     <button class="btn btn-login active" id="button-login">Login</button>
                 </div> 
             <div class="form-login"> 
                 <form 
                 action="./cadastro.html"
                 method="get"
-                onsubmit="return validar(idEmail, idSenha)">
+                onsubmit="return validar(idEmailLogin, idSenhaLogin)">
                 <fieldset class="fieldset">
                     <span id="valida" class="valida"></span>
                     <div class="form-group">
