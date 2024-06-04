@@ -2,24 +2,24 @@
 
 .valorkg{
     background-color:#0095c6;
-    width: 25vw;
-    height: 50vh;
+    width: 30vw;
+    height: 70vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 900px;
+    left: 800px;
     align-items: center;
     justify-content: center;
     color: white;
-    gap: 50px;
+    gap: 100px;
     bottom: 100px;
 }
 
 .valor-texto{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 100px;
 }
 
 .column{
@@ -34,7 +34,7 @@
 }
 
 #cans{
-    height:20vh;
+    height:30vh;
 }
 
 .ajude{
@@ -67,7 +67,7 @@
     color: white;
     border: none;
     height: 7vh;
-    width: 23vw;
+    width:23vw;
     font-size: 20px;
 }
 
@@ -88,16 +88,18 @@
 
 #escolha{
     height:100vh;
+    width: 100%;
 }
 
 .valor{
     display: flex;
     flex-direction: column;
     position: relative;
-    bottom: -175px;
-    left: 70px;
+    bottom: -225px;
+    left: 200px;
     gap: 70px;
     justify-content: center;
+    width: 1000px;
 }
 
 .tipo-material{
