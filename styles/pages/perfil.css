@@ -37,6 +37,7 @@
     flex-direction: row;
 }
 .left{
+    display: flex;
     margin-top: 20vh;
 }
 .form-group{
@@ -54,8 +55,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75vh;
-    width: 60vw;
+    height: 80vh;
+    width: 55vw;
     background-color: #0095C6 ;
 }
 label{
@@ -64,6 +65,8 @@ label{
     padding-bottom: 3px;
 }
 .input{
+    color: black;
+    font-size: var(--b);
     border-radius: 20px;
     border: transparent 20px inset;
     background-color: #c4c2c2;
@@ -81,7 +84,7 @@ label{
     background-color: #024157;
 }
 .form{
-    width: 50vw;
+    width: 40vw;
 }
 .btnSubmit{
     margin: 2vh;
@@ -89,7 +92,10 @@ label{
     justify-content: end;
     width: 100%;
 }
-.btnConfiguracao{
+.configuracao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: var(--b);
     border: none;
