@@ -2,10 +2,10 @@
 @media(min-width:1401px){
 .container{
     height: 100vh;
-    background-position-y: 5%;
+    background-position-y: 50%;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(../../assets/images/profile_image.png);
+    background-image: url(../../assets/images/fundo_para_celular_perfil.png);
 }
 .section-top{
     height: 50vh;   
@@ -22,14 +22,21 @@
 .section-top{
     display: flex;
     flex-direction: row; 
-    justify-content: space-around;   
+    justify-content: space-around; 
+    height: 70vh;  
     margin-top: 15vh;
     margin-right: 5vh;
+}
+.conteudo{
+    height: 70vh;
 }
 .img-profile{
     height: 35vh;
 }
 .wrapper{
+    gap: 25vw;
+    display: flex;
+    flex-direction: row; 
     margin-top: 5vh;
 }
 .wrapper-bottom{
@@ -113,7 +120,7 @@ label{
         background-position-y: 60%;
         background-size: 100%;
         background-repeat: no-repeat;
-        background-image: url(../../assets/images/tentativa.png);
+        background-image: url(../../assets/images/fundo_para_celular_perfil.png);
     }
     .section-top{
         height: 50vh;   
@@ -138,6 +145,9 @@ label{
         height: 25vh;
     }
     .wrapper{
+        gap: 20vw;
+        display: flex;
+        flex-direction: row; 
         margin-top: 5vh;
     }
     .wrapper-bottom{
@@ -220,7 +230,7 @@ label{
         background-position-y: -20%;
         background-size: 100%;
         background-repeat: no-repeat;
-        background-image: url(../../assets/images/tentativa.png);
+        background-image: url(../../assets/images/fundo_para_celular_perfil.png);
     }
     .section-top{
         height: 50vh;   
@@ -245,6 +255,9 @@ label{
         height: 20vh;
     }
     .wrapper{
+        gap: 3vw;
+        display: flex;
+        flex-direction: row; 
         margin-top: 5vh;
     }
     .wrapper-bottom{
@@ -330,14 +343,14 @@ label{
         height: 20vh;
     }
     .section-top{
-        height: 50vh;   
+        height: 30vh;   
     }
     .textos{
         color: white; 
     }
     .textos h1{
         font-weight: 400;
-        font-size: var(--b);
+        font-size: var(--l);
         letter-spacing: 1px;
         padding-bottom: 10%;
     }
