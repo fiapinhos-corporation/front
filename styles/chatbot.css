@@ -11,6 +11,7 @@
     bottom: 50px;
     right: 50px;
     transition: 0.6s ease-in-out;
+    filter: invert(0%) sepia(97%) saturate(104%) hue-rotate(181deg) brightness(78%) contrast(101%);
 
 }
 .chat:hover{

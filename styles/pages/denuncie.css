@@ -1,0 +1,112 @@
+@import url(../globals.css);
+
+body{
+    background-color: var(--cyan);
+}
+
+#denuncie{
+    background: url(../../assets/images/denuncie2.webp);
+    background-repeat: no-repeat ;
+    background-size: cover ;
+}
+#denuncie .wrapper button{
+    max-width: 380px !important;
+}
+
+#denuncie .wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: right !important;
+    padding: 100px;
+}
+#denuncie .wrapper .wrapper-content{
+    display: flex;    
+    width: 40%;
+    justify-content: right;
+    justify-self: right;
+    flex-direction: column;
+    row-gap: 40px;
+    
+}
+
+#denuncie h2 .highlight{
+    color: var(--black) !important;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 40px 0;
+    gap: 40px;
+    align-items: left;
+}
+main h2{
+    font-size: var(--xl);
+}
+main img{
+    max-width: 300px;
+}
+main .meio-de-comunicacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+main .meio-de-comunicacao aside{
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    width: min-content;
+    gap: 20px;
+}
+
+#greenpiece{
+    margin: 80px 0 0 0;
+}
+
+#greenpiece{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+#greenpiece .wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    justify-content: space-between;
+}
+#greenpiece .duvida{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 150px;
+    justify-content: space-between;
+}
+#greenpiece .duvida h2{
+    font-size: var(--l);
+    font-weight: 700;
+}
+#greenpiece .duvida img{
+    width: fit-content;
+    max-width: 130px;
+}
+
+#greenpiece .wrapper aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#greenpiece .wrapper img{
+    height: 300px;
+    max-width: 300px;
+    width: max-content;
+    object-fit: contain;
+}
