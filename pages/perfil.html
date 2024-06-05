@@ -52,76 +52,23 @@
                 </div>
                 <div class="right">
                     <div class="form form-cadastro"> 
-                        <form 
-                        action=""
-                        method="get"
-                        onsubmit="">
-                        <fieldset class="fieldset">
-                            <span id="valida" class="valida"></span>
-                            <div class="form-group">
-                                    <label class="" for="idEmail">Email</label>
-                                    <input
-                                    class="input"
-                                    type="email"
-                                    name="txtEmail"
-                                    id="idEmail"
-                                    placeholder="GefersonBraga@email.com"
-                                    disabled
-                                    oninvalid="this.setCustomValidity('Email inválido.')">
-                                    <label class="" for="idSenha">Senha</label>
-                                    <input
-                                    class="input"
-                                    type="password"
-                                    name="txtSenha"
-                                    id="idSenha"
-                                    disabled
-                                    placeholder="***********"
-                                    >
-                                    <label class="" for="idCPF">CPF</label>
-                                    <input
-                                    class="input"
-                                    type="text"
-                                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-                                    name="txtCPF"
-                                    id="idCPF"
-                                    disabled
-                                    placeholder="123.123.123-12"
-                                    >
-                                    <label class="" for="idEndereco">Endereco</label>
-                                    <input
-                                    class="input"
-                                    type="text"
-                                    name="txtEndereco"
-                                    id="idEndereco"
-                                    disabled
-                                    placeholder="Rua dos Jatobas"
-                                    >
-                                    <label class="" for="idCEP">CEP</label>
-                                    <input
-                                    class="input"
-                                    type="text"
-                                    pattern="\d{5}-\d{3}"
-                                    name="txtCEP"
-                                    id="idCEP"
-                                    disabled
-                                    placeholder="12345-123"
-                                    >
-                                    <label class="" for="idTelefone">Telefone</label>
-                                    <input
-                                    class="input"
-                                    type="text"
-                                    pattern="\(\d{2}\)\d{5}-\d{4}"
-                                    name="txtTelefone"
-                                    id="idTelefone"
-                                    disabled
-                                    placeholder="(11)12345-1234"
-                                    >
-                                <div class="btnSubmit">
-                                    <button class=" btn btnEnviar">Sair</button>       
-                                </div>
+                        <div class="form-group">
+                                <label for="idEmail">Email</label>
+                                <p class="input"><span id="idEmail"></span></p>
+                                <label for="idSenha">Senha</label>
+                                <p class="input"><span id="idSenha"></span></p>
+                                <label for="idCPF">CPF</label>
+                                <p class="input"><span id="idCPF"></span></p>
+                                <label for="idEndereco">Endereco</label>
+                                <p class="input"><span id="idEndereco"></span></p>
+                                <label for="idCEP">CEP</label>
+                                <p class="input"><span id="idCEP"></span></p>
+                                <label for="idTelefone">Telefone</label>
+                                <p class="input"><span id="idTelefone"></span></p>
+                            <div class="btnLogout">
+                                <button class=" btn btnEnviar" id="Logout">Sair</button>       
                             </div>
-                        </fieldset>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 </div>

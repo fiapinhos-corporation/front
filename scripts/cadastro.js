@@ -3,21 +3,21 @@ let listaUsuario = [
       nome: "Gustavo Dias",
       emailUsuario: "gd@email.com",
       senhaUsuario: "123456",
-      cpf:"123.123.123-11",
-      endereco: "Rua são joaquin",
-      cep: "12345-123",
-      telefone: "11 12345-1234",
-      pontos: 2000
+      cpfUsuario:"123.123.123-11",
+      enderecoUsuario: "Rua são joaquin",
+      cepUsuario: "12345-123",
+      telefoneUsuario: "11 12345-1234",
+      pontos: 2000,
     },
     {
       nome: "Felipe Ribeiro",
       emailUsuario: "fr@email.com",
       senhaUsuario: "123456",
-      cpf:"123.123.123-11",
-      endereco: "Rua são joaquin",
-      cep: "12345-123",
-      telefone: "11 12345-1234",
-      pontos: 1000
+      cpfUsuario:"123.123.123-11",
+      enderecoUsuario: "Rua são joaquin",
+      cepUsuario: "12345-123",
+      telefoneUsuario: "11 12345-1234",
+      pontos: 1000,
     },
     {
       nome: "Enrico Del Guerra",
@@ -27,7 +27,7 @@ let listaUsuario = [
       enderecoUsuario: "Rua são joaquin",
       cepUsuario: "12345-123",
       telefoneUsuario: "11 12345-1234",
-      pontos: 3000
+      pontos: 3000,
     },
   ];
 
@@ -42,9 +42,9 @@ let listaUsuario = [
           
             msgStatus.setAttribute("class","sucesso");
             msgStatus.innerText = "Login realizado com sucesso!";
-    
+
             
-            localStorage.setItem("user", JSON.stringify(listaUsuario[x]));
+            localStorage.setItem("usuario", JSON.stringify(listaUsuario[x]));
             
             setTimeout(function(){
                 msgStatus.setAttribute("class","valida");
@@ -71,7 +71,7 @@ function cadastrar(inputNome, inputEmail, inputSenha,inputSenhaAux, inputCPF,inp
         msgStatus.setAttribute("class","sucesso");
         msgStatus.innerText = "Cadastro realizado com sucesso!";
 
-        user = 
+        usuario = 
             {
             nome: inputNome.value,
             emailUsuario: inputEmail.value,
@@ -82,7 +82,7 @@ function cadastrar(inputNome, inputEmail, inputSenha,inputSenhaAux, inputCPF,inp
             telefoneUsuario: inputTelefone.value,
             pontos: 2000
         }
-        listaUsuario.push(user)
+        listaUsuario.push(usuario)
 
         setTimeout(function(){
             msgStatus.setAttribute("class","valida");
