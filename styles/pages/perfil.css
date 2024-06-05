@@ -26,6 +26,9 @@
     margin-top: 15vh;
     margin-right: 5vh;
 }
+.conteudo{
+    height: 70vh;
+}
 .img-profile{
     height: 35vh;
 }
@@ -113,7 +116,7 @@ label{
         background-position-y: 60%;
         background-size: 100%;
         background-repeat: no-repeat;
-        background-image: url(../../assets/images/tentativa.png);
+        background-image: url(../../assets/images/fundo_para_celular_perfil.png);
     }
     .section-top{
         height: 50vh;   
@@ -220,7 +223,7 @@ label{
         background-position-y: -20%;
         background-size: 100%;
         background-repeat: no-repeat;
-        background-image: url(../../assets/images/tentativa.png);
+        background-image: url(../../assets/images/fundo_para_celular_perfil.png);
     }
     .section-top{
         height: 50vh;   
