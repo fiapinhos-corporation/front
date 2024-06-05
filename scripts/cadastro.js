@@ -32,9 +32,7 @@ let listaUsuario = [
   ];
 
   function validar(inputEmail, inputSenha) {
-  
-    
-    let msgStatus = document.querySelector(".valida");
+    let msgStatus = document.querySelector(".validaLogin");
     
     for (let x = 0; x < listaUsuario.length; x++) {
         
@@ -67,7 +65,7 @@ let listaUsuario = [
 function cadastrar(inputNome, inputEmail, inputSenha,inputSenhaAux, inputCPF,inputEndereco,inputCEP,inputTelefone){
     let msgStatus = document.querySelector(".valida")
 
-    if(inputSenha.value == inputSenhaAux.value){
+    if(inputSenha.value == inputSenhaAux.value && inputSenha.value != ""){
         msgStatus.setAttribute("class","sucesso");
         msgStatus.innerText = "Cadastro realizado com sucesso!";
 
