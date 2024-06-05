@@ -32,8 +32,7 @@ let listaUsuario = [
   ];
 
   function validar(inputEmail, inputSenha) {
-  
-    let msgStatus = document.querySelector(".valida");
+    let msgStatus = document.querySelector(".validaLogin");
     
     for (let x = 0; x < listaUsuario.length; x++) {
         

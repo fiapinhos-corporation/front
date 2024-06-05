@@ -110,6 +110,16 @@
     .btn:active{
         background-color: #004053;
     }
+    .erro{
+        width: 100%;
+        text-align: center;
+        color: red;
+    }
+    .sucesso{
+        width: 100%;
+        text-align: center;
+        color: green;
+    }
 @media (min-width:1025px) and (max-width:1400px){
     body{
         background-color: #68b5e2;
