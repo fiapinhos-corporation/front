@@ -8,13 +8,13 @@ let itens = [
   {
     nome: "Cafeteira",
     pontos: 20.99,
-    image: "",
+    image: "../assets/images/cafeteira.webp",
     tipo: "outros",
   },
   {
     nome: "Cafeteira",
     pontos: 30.99,
-    image: "../assets/images/cafeteira.webp",
+    image: "",
     tipo: "livros",
   },
   {
