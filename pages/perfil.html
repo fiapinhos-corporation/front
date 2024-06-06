@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/pages/perfil.css">
+    <script src="../scripts/perfil.js" defer></script>
+
+    <title>Perfil</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <nav>
+            <a href="../index.html">
+                <h2>Fiapinhos</h2>
+            </a>
+            <ul>
+                <a href="">
+                    <li>Ajude</li>
+                </a>
+                <a href="">
+                    <li>Espécies ameaçadas</li>
+                </a>
+                <a href="">
+                    <li>Denuncie</li>
+                </a>
+            </ul>
+            <a href="./perfil.html"><img id="profile" src="../assets/images/profile.svg" alt="Imagem do perfil da pessoa"></a>
+        </nav>
+    </header>
+    <div class="conteudo">
+        <section class="section-top">
+            <div class="wrapper">
+            <div>   
+            <div class="textos">
+                <h1>Nome: <span id="nomeUser"></span></h1>
+                <h1>Conta criada desde 2024</h1>
+                <h1>Pontos:<span id="pontosUser"></span></h1>
+            </div>
+            </div>
+            <div>
+                <img class="img-profile" src="../assets/images/profile.svg" alt="Imagem de perfil da pessoa.">
+            </div>
+        </div>
+        </section>
+    <section class="section-bottom">
+            <div class="wrapper-bottom">
+                <div class="left">
+                    <p class="configuracao">Configurações</p>
+                </div>
+                <div class="right">
+                    <div class="form form-cadastro"> 
+                        <div class="form-group">
+                                <label>Email</label>
+                                <p class="input"><span id="idEmail"></span></p>
+                                <label>Senha</label>
+                                <p class="input"><span id="idSenha"></span></p>
+                                <label>CPF</label>
+                                <p class="input"><span id="idCPF"></span></p>
+                                <label>Endereco</label>
+                                <p class="input"><span id="idEndereco"></span></p>
+                                <label>CEP</label>
+                                <p class="input"><span id="idCEP"></span></p>
+                                <label >Telefone</label>
+                                <p class="input"><span id="idTelefone"></span></p>
+                            <div class="btnLogout">
+                                <button class=" btn btnEnviar" id="Logout">Sair</button>       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>

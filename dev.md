@@ -1,5 +1,5 @@
 # TODO
-- pagina contato
-- pagina dos descartes por cidade
 - testar possibilidades quanto a transição de sections na página principal
-- animação (nao sei se é com css ou js)
+- fazer as paginas de participantes, e de mandar o recibo
+- na pagina de participantes a gente precisa colocar quem somos, e qual o nosos trabalho, ai a gente coloca nossa foto no final
+- terminar isso amanha

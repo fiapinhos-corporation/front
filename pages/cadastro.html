@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+<link rel="stylesheet" href="../styles/globals.css">
+<link rel="stylesheet" href="../styles/pages/cadastro.css">
+<script src="../scripts/cadastro.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Fiapinhos</h1>
+    </header>
+    <div class="container">
+        <div class="around" id="divCadastro">
+        <div class="btnLoginCadastro">
+            <button class="btn btn-cadastroT active" id="button-cadastroTop">Cadastro</button>
+            <button class="btn btn-login" id="button-loginTop">Login</button>
+        </div>
+            <div class="form form-cadastro"> 
+                <form 
+                action="./cadastro.html"
+                method="get"
+                onsubmit="return cadastrar(idNome,idEmail,idSenha,idSenhaAux,idCPF,idEndereco,idCEP,idTelefone  )">
+                <fieldset class="fieldset">
+                    <span id="valida" class="valida"></span>
+                    <div class="form-group">
+                            <label class="" for="idNome">Nome</label>
+                            <input
+                            class="input"
+                            type="text"
+                            name="txtNome"
+                            id="idNome"
+                            placeholder="Digite o seu nome aqui">
+                            <label class="" for="idEmail">Email</label>
+                            <input
+                            class="input"
+                            type="email"
+                            name="txtEmail"
+                            id="idEmail"
+                            placeholder="Digite o seu Email aqui"
+                            oninvalid="this.setCustomValidity('Email inválido.')">
+                            <label class="" for="idSenha">Senha</label>
+                            <input
+                            class="input"
+                            type="password"
+                            name="txtSenha"
+                            id="idSenha"
+                            placeholder="Digite sua senha"
+                            >
+                            <label class="" for="idSenhaAux">Confirme Senha</label>
+                            <input
+                            class="input"
+                            type="password"
+                            name="txtCPF"
+                            id="idSenhaAux"
+                            placeholder="Confirme sua senha"
+                            >
+                            <label class="" for="idCPF">CPF</label>
+                            <input
+                            class="input"
+                            type="text"
+                            pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                            name="txtCPF"
+                            id="idCPF"
+                            placeholder="Digite seu CPF"
+                            >
+                            <label class="" for="idEndereco">Endereco</label>
+                            <input
+                            class="input"
+                            type="text"
+                            name="txtEndereco"
+                            id="idEndereco"
+                            placeholder="Digite seu endereço"
+                            >
+                            <label class="" for="idCEP">CEP</label>
+                            <input
+                            class="input"
+                            type="text"
+                            pattern="\d{5}-\d{3}"
+                            name="txtCEP"
+                            id="idCEP"
+                            placeholder="Digite seu CEP"
+                            >
+                            <label class="" for="idTelefone">Telefone</label>
+                            <input
+                            class="input"
+                            type="text"
+                            pattern="\(\d{2}\)\d{5}-\d{4}"
+                            name="txtTelefone"
+                            id="idTelefone"
+                            placeholder="Digite seu Telefone"
+                            >
+                        <div class="btnSubmit">
+                            <button class=" btn btnEnviar" type="submit">Cadastrar</button>
+                        </div>
+                    </div>
+                </fieldset>
+                </form>
+            </div>
+        </div>
+            <div class="around none" id="divLogin">
+                <div class="btnLogin">
+                    <button class="btn btn-cadastro" id="button-cadastroDown">Cadastro</button>
+                    <button class="btn btn-login active" id="button-login">Login</button>
+                </div> 
+            <div class="form-login"> 
+                <form 
+                action="./cadastro.html"
+                method="get"
+                onsubmit="return validar(idEmailLogin, idSenhaLogin)">
+                <fieldset class="fieldset">
+                    <span id="validaLogin" class="validaLogin"></span>
+                    <div class="form-group">
+                            <label class="label-Email" for="idEmailLogin">Email</label>
+                            <input
+                            class="input"
+                            type="email"
+                            name="txtEmail"
+                            id="idEmailLogin"
+                            placeholder="Digite o seu Email aqui"
+                            oninvalid="this.setCustomValidity('Email inválido.')">
+                            <label class="label-senha" for="idSenhaLogin">Senha</label>
+                            <input
+                            class="input"
+                            type="password"
+                            name="txtSenha"
+                            id="idSenhaLogin"
+                            placeholder="Digite sua senha"
+                            >
+                        <div class="btnSubmit">
+                            <button class="btn btnEnviar" type="submit">Login</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form> 
+        </div>
+    </div>
+</div>
+</body>
+</html>
