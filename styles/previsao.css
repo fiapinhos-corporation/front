@@ -1,19 +1,17 @@
 @import url(./globals.css);
 
 .valorkg{
+    margin-top: 20vh;
     background-color:#0095c6;
     width: 30vw;
     height: 70vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 800px;
     align-items: center;
     justify-content: center;
     color: white;
     gap: 100px;
-    bottom: 100px;
 }
 
 .valor-texto{
@@ -53,7 +51,7 @@
 #lixo{
     background-color: #0095c6;
     color: white;
-    border-radius: 50px;
+    border-radius: 25px;
     border: none;
     height: 7vh;
     width: 23vw;
@@ -87,6 +85,9 @@
 }
 
 #escolha{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     height:100vh;
     width: 100%;
 }
@@ -96,12 +97,11 @@
 .valor{
     display: flex;
     flex-direction: column;
-    position: relative;
-    bottom: -225px;
-    left: 200px;
+    margin-right: 10vw;
     gap: 70px;
     justify-content: center;
-    width: 1000px;
+    align-items: center;
+    width: 30vw;
 }
 
 .tipo-material{
