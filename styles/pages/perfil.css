@@ -80,6 +80,7 @@ label{
     background-color: #c4c2c2;
 }
 .btn{
+    cursor: pointer;
     border-radius: 10px;
     font-size: var(--b);
     width: 15vw;
