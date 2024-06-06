@@ -1,0 +1,486 @@
+@import url(../globals.css);
+@media(min-width:1401px){
+    .valorkg{
+        margin-top: 20vh;
+        background-color:#0095c6;
+        width: 30vw;
+        height: 70vh;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 100px;
+    }
+
+    .valor-texto{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .highlight{
+        color: #05C3FF;
+    }
+
+    #cans{
+        height:30vh;
+    }
+
+    .ajude{
+        position: relative;
+    }
+
+    .texto-ajude{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: white;
+    }
+
+    #lixo{
+        background-color: #0095c6;
+        color: white;
+        border-radius: 25px;
+        border: none;
+        height: 7vh;
+        width: 23vw;
+        font-size: 20px;
+        align-items: center;
+    }
+
+    #inputkg{
+        border-radius: 25px;
+        background-color: #0095c6;
+        color: white;
+        border: none;
+        height: 7vh;
+        width:23vw;
+        font-size: 20px;
+    }
+
+    #top-ajude{
+        background: url(../../assets/images/ajude.webp);
+        height: calc(100vh - 110px) !important;
+        box-shadow: inset 0 0 0 1000px #081b15a2;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .bold{
+        font-weight: bold;
+        position: relative;
+        bottom: -75px;
+    }
+
+    #escolha{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height:100vh;
+        width: 100%;
+    }
+    .img{
+        height: 30vh;
+    }
+    .valor{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10vw;
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+    }
+
+    .tipo-material{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .kg-material{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (min-width:1025px) and (max-width:1400px){
+    .valorkg{
+        margin-top: 20vh;
+        background-color:#0095c6;
+        width: 50vw;
+        height: 70vh;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 100px;
+    }
+
+    .valor-texto{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .highlight{
+        color: #05C3FF;
+    }
+
+    #cans{
+        height:30vh;
+    }
+
+    .ajude{
+        position: relative;
+    }
+
+    .texto-ajude{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: white;
+    }
+
+    #lixo{
+        background-color: #0095c6;
+        color: white;
+        border-radius: 25px;
+        border: none;
+        height: 7vh;
+        width: 30vw;
+        font-size: 20px;
+        align-items: center;
+    }
+
+    #inputkg{
+        border-radius: 25px;
+        background-color: #0095c6;
+        color: white;
+        border: none;
+        height: 7vh;
+        width:30vw;
+        font-size: 20px;
+    }
+
+    #top-ajude{
+        background: url(../../assets/images/ajude.webp);
+        height: calc(100vh - 110px) !important;
+        box-shadow: inset 0 0 0 1000px #081b15a2;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .bold{
+        font-weight: bold;
+        position: relative;
+        bottom: -75px;
+    }
+
+    #escolha{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height:100vh;
+        width: 100%;
+    }
+    .img{
+        height: 30vh;
+    }
+    .valor{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10vw;
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+    }
+
+    .tipo-material{
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .kg-material{
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .valorkg{
+        margin-top: 20vh;
+        background-color:#0095c6;
+        width: 50vw;
+        height: 70vh;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 100px;
+    }
+
+    .valor-texto{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .highlight{
+        color: #05C3FF;
+    }
+
+    #cans{
+        height:30vh;
+    }
+
+    .ajude{
+        position: relative;
+    }
+
+    .texto-ajude{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: white;
+    }
+
+    #lixo{
+        background-color: #0095c6;
+        color: white;
+        border-radius: 25px;
+        border: none;
+        height: 7vh;
+        width: 30vw;
+        font-size: 20px;
+        align-items: center;
+    }
+
+    #inputkg{
+        border-radius: 25px;
+        background-color: #0095c6;
+        color: white;
+        border: none;
+        height: 7vh;
+        width:30vw;
+        font-size: 20px;
+    }
+
+    #top-ajude{
+        background: url(../../assets/images/ajude.webp);
+        height: calc(100vh - 110px) !important;
+        box-shadow: inset 0 0 0 1000px #081b15a2;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .bold{
+        font-weight: bold;
+        position: relative;
+        bottom: -75px;
+    }
+
+    #escolha{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height:100vh;
+        width: 100%;
+    }
+    .img{
+        height: 30vh;
+    }
+    .valor{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10vw;
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+    }
+
+    .tipo-material{
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .kg-material{
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media(max-width:767px){
+    .valorkg{
+        margin-top: 10vh;
+        background-color:#0095c6;
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 100px;
+    }
+
+    .valor-texto{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .highlight{
+        color: #05C3FF;
+    }
+
+    #cans{
+        height:30vh;
+    }
+
+    .ajude{
+        position: relative;
+    }
+
+    .texto-ajude{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: white;
+    }
+
+    #lixo{
+        background-color: #0095c6;
+        color: white;
+        border-radius: 25px;
+        border: none;
+        height: 7vh;
+        width: 60vw;
+        font-size: 20px;
+        align-items: center;
+    }
+
+    #inputkg{
+        border-radius: 25px;
+        background-color: #0095c6;
+        color: white;
+        border: none;
+        height: 7vh;
+        width:60vw;
+        font-size: 20px;
+    }
+
+    #top-ajude{
+        background: url(../../assets/images/ajude.webp);
+        height: calc(100vh - 110px) !important;
+        box-shadow: inset 0 0 0 1000px #081b15a2;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .bold{
+        font-weight: bold;
+        position: relative;
+        bottom: -75px;
+    }
+
+    #escolha{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        width: 100vw;
+    }
+    .img{
+        height: 20vh;
+    }
+    .valor{
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10vw;
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+    }
+
+    .tipo-material{
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .kg-material{
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
