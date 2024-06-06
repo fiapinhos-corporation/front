@@ -1,1 +1,29 @@
-let usuario = JSON.parse(localStorage.getItem("usuario"));
+let user = JSON.parse(localStorage.getItem("usuario"));
+
+let msgPontos = document.getElementById("pontos")
+msgPontos.innerText = user.pontos
+
+
+function validarRecibo(inputNr, inputValor) {
+    let msg = document.querySelector(".valida");
+    let aux = "12345678"
+    if(inputNr === inputNr && inputValor.value != ""){
+        msg.classList.add("valido")
+        msg.innerText = "Verificação feita pontos adicionados na conta";
+        let pontosUser = parseInt(user.pontos)
+        let valor = parseInt(inputValor.value);
+        let pontosAux = Math.round(valor/ 5);
+        let total = pontosAux + pontosUser;
+        user.pontos = total
+        localStorage.setItem("usuario", JSON.stringify(user));
+
+
+        setTimeout(function(){
+            msg.setAttribute("class","valida");
+            msg.innerText = "";
+            window.location.href = "../pages/pontos.html";
+        }, 5000);
+        return false;
+    }
+
+}

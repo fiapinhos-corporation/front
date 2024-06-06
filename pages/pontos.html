@@ -44,7 +44,7 @@
         method="get"
         onsubmit="return validarRecibo(idNrRecibo, idValor)">
             <fieldset class="fieldset">
-                <span id="validaLogin" class="validaLogin"></span>
+                <span id="valida" class="valida"></span>
                     <div class="form-group">
                         <label class="label-Email" for="idNrRecibo">Numero do recibo</label>
                         <input
@@ -60,6 +60,7 @@
                         class="input"
                         type="text"
                         name="txtValor"
+                        pattern="[0-9]{0-8}"
                         id="idValor"
                         placeholder="Digite o valor do recibo"
                         >
