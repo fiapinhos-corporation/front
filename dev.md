@@ -2,4 +2,6 @@
 - testar possibilidades quanto a transição de sections na página principal
 - 
 
-- Precisa arrumar a sessão de inputs do perfil, pois na minha cabeça nos mostrariamos as informações do usuário ali, e eu nn sei fazer isso sem ser o placeholder. e precisa arrumar as divs inuteis.
+- fazer as paginas de participantes, e de mandar o recibo
+- na pagina de participantes a gente precisa colocar quem somos, e qual o nosos trabalho, ai a gente coloca nossa foto no final
+- terminar isso amanha
