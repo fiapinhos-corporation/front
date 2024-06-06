@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../styles/button.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/previsao.css">
+    <script src="../scripts/previsao.js" defer></script>
 </head>
 <body>
     <button class="chat">
@@ -17,7 +18,7 @@
     </button>
     <header>
         <nav>
-            <a href="">
+            <a href="../index.html">
                 <h2>Fiapinhos</h2>
             </a>
             <ul>
@@ -31,7 +32,7 @@
                     <li>Denuncie</li>
                 </a>
             </ul>
-            <a href=""><img id="profile" src="./assets/images/profile.svg" alt=""></a>
+            <a href="./perfil.html"><img id="profile" src="../assets/images/profile.svg" alt=""></a>
         </nav>
     </header>
     
@@ -47,11 +48,11 @@
     <section id="escolha">
         <div class="valor">
             <div class="tipo-material">
-                <label for="lixo">Escolha o tipo de lixo que você irá reciclar</label>
+                <label>Escolha o tipo de lixo que você irá reciclar</label>
                 <select name="lixo" id="lixo">
                     <option value="aluminio">Aluminio</option>
                     <option value="componentes-eletrônicos">Componentes Eletrônicos</option>
-                    <option value="metal">Metal</option>
+                    <option value="cobre">Cobre</option>
                     <option value="papel">Papel</option>
                     <option value="plastico">Plástico</option>
                     <option value="vidro">Vidro</option>
@@ -63,15 +64,15 @@
             </div>
         </div>
         <div class="valorkg">
-            <img id="cans" src="../assets/icons/cans1.svg" alt="Latas">
+            <img class="img" id="img-lixo" src="../assets/icons/cans1.svg" alt="Latas">
                 <div class="valor-texto">
                     <div class="column">
                         <label>Valor por KG</label>
-                        <p id="valor-por-kg">XXR$</p>
+                        <p id="valor-por-kg">0 R$</p>
                     </div>
                     <div class="column">
                         <label>Valor a receber</label>
-                        <p id="valor-areceber">XXR$</p>
+                        <p id="valor-a-receber">0 R$</p>
                     </div>          
                 </div>
         </div>
