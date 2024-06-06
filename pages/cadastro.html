@@ -32,7 +32,8 @@
                             type="text"
                             name="txtNome"
                             id="idNome"
-                            placeholder="Digite o seu nome aqui">
+                            placeholder="Digite o seu nome aqui"
+                            required>
                             <label class="" for="idEmail">Email</label>
                             <input
                             class="input"
@@ -40,7 +41,8 @@
                             name="txtEmail"
                             id="idEmail"
                             placeholder="Digite o seu Email aqui"
-                            oninvalid="this.setCustomValidity('Email inválido.')">
+                            oninvalid="this.setCustomValidity('Email inválido.')"
+                            >
                             <label class="" for="idSenha">Senha</label>
                             <input
                             class="input"
@@ -48,7 +50,7 @@
                             name="txtSenha"
                             id="idSenha"
                             placeholder="Digite sua senha"
-                            >
+                            required>
                             <label class="" for="idSenhaAux">Confirme Senha</label>
                             <input
                             class="input"
@@ -56,7 +58,7 @@
                             name="txtCPF"
                             id="idSenhaAux"
                             placeholder="Confirme sua senha"
-                            >
+                            required>
                             <label class="" for="idCPF">CPF</label>
                             <input
                             class="input"
@@ -65,7 +67,8 @@
                             name="txtCPF"
                             id="idCPF"
                             placeholder="Digite seu CPF"
-                            >
+                            oninvalid="this.setCustomValidity('Padrao a ser seguido. (xxx.xxx.xxx-xx)')"
+                            required>
                             <label class="" for="idEndereco">Endereco</label>
                             <input
                             class="input"
@@ -73,7 +76,7 @@
                             name="txtEndereco"
                             id="idEndereco"
                             placeholder="Digite seu endereço"
-                            >
+                            required>
                             <label class="" for="idCEP">CEP</label>
                             <input
                             class="input"
@@ -82,7 +85,8 @@
                             name="txtCEP"
                             id="idCEP"
                             placeholder="Digite seu CEP"
-                            >
+                            oninvalid="this.setCustomValidity('Padrao a ser seguido. (xxxxx-xxx)')"
+                            required>
                             <label class="" for="idTelefone">Telefone</label>
                             <input
                             class="input"
@@ -90,8 +94,9 @@
                             pattern="\(\d{2}\)\d{5}-\d{4}"
                             name="txtTelefone"
                             id="idTelefone"
+                            oninvalid="this.setCustomValidity('Padrao a ser seguido.((xx)xxxxx-xxxx)')"
                             placeholder="Digite seu Telefone"
-                            >
+                            required>
                         <div class="btnSubmit">
                             <button class=" btn btnEnviar" type="submit">Cadastrar</button>
                         </div>
@@ -120,7 +125,8 @@
                             name="txtEmail"
                             id="idEmailLogin"
                             placeholder="Digite o seu Email aqui"
-                            oninvalid="this.setCustomValidity('Email inválido.')">
+                            oninvalid="this.setCustomValidity('Email inválido.')"
+                            required>
                             <label class="label-senha" for="idSenhaLogin">Senha</label>
                             <input
                             class="input"
@@ -128,7 +134,7 @@
                             name="txtSenha"
                             id="idSenhaLogin"
                             placeholder="Digite sua senha"
-                            >
+                            required>
                         <div class="btnSubmit">
                             <button class="btn btnEnviar" type="submit">Login</button>
                         </div>
