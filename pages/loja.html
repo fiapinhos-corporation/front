@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+
+    <!-- componentes -->
+    <link rel="stylesheet" href="../styles/button.css">
+    <link rel="stylesheet" href="../styles/chatbot.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/hero.css">
+
+    <!-- página -->
+    <link rel="stylesheet" href="../styles/pages/loja.css">
+    <script src="../scripts/loja.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">
+                <h2>Fiapinhos</h2>
+            </a>
+            <ul>
+                <li>
+                    <a href="">Ajude</a>
+                </li>
+                <li>
+                    <a href="./pages/especies-ameacadas.html">Espécies ameaçadas</a>
+                </li>
+                <li>
+                    <a href="">Denuncie</a>
+                </li>
+                <li>
+                    <a href="">Loja</a>
+                </li>
+            </ul>
+            <a href=""><img id="profile" src="../assets/images/profile.svg" alt="Ícone de perfil"></a>
+        </nav>
+    </header>
+    <button class="chat">
+        <img src="../assets/icons/message.svg" alt="Chatbot">
+    </button>
+    <div id="dados-usuario-loja">
+        <div class="wrapper">
+            <p id="nome-user-loja">Você não está <strong>cadastrado</strong>, <a href="./cadastro.html">acesse aqui</a> para cadastrar!</p>
+            <p id="pontos-user-loja">Pontos: </p>
+        </div>
+    </div>
+
+    <aside id="search-category">
+        <div class="search"><input type="text" id="search-input"><button id="search-btn"><img src="../assets/icons/search.svg" alt="Símbolo de busca"></button></div> 
+    </aside>
+    <main>
+        <div class="container-itens">
+            
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <nav>
+                <p>Nosso objetivo como os <span class="highlight">Fiapinhos</span> é ajudar a resolver um importante problema: as espécies marítmas
+                    ameaçadas de extinção</p>
+                <table class="footer-pages">
+                    <thead>
+                        <tr>
+                            <th>Espécies ameaçadas</th>
+                            <th>Denuncie</th>
+                            <th>Ajude</th>
+                            <th>Loja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                        </tr>
+                        <tr>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                        </tr>
+                        <tr>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                        </tr>
+                        <tr>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+            <br><br>
+            <hr>
+            <br>
+            <div class="final-footer">
+                <h3>Fiapinhos</h3>
+                <button class="contact-btn">Entre em contato</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,5 +1,5 @@
 @import url(./globals.css);
-button{
+button {
     padding: 17px 56px;
     border: none;
     background-color: var(--third-color);
