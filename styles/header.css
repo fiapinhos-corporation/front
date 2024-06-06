@@ -15,9 +15,10 @@ header nav ul{
     display: flex;
     gap: 40px;
     align-items: center;    
-    color: white;
+    
 }
 header nav a{
+    color: white;
     text-decoration: none;
     transition: 0.6s ease-in-out;
 }
