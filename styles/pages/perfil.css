@@ -63,7 +63,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 85vh;
     width: 55vw;
     background-color: #0095C6 ;
 }
@@ -88,6 +88,23 @@ label{
     background-color: #026e92;
     color: white;
 }
+.btn-a{
+    border-radius: 10px;
+    font-size: var(--b);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 4vh;
+    border: none;
+    background-color: #026e92;
+    color: white;
+    margin-right: 10vw;
+}
+.btn-a:active{
+    background-color: #024157;
+}
 .btn:active{
     background-color: #024157;
 }
@@ -95,7 +112,7 @@ label{
     width: 40vw;
 }
 .btnLogout{
-    margin: 2vh;
+    margin-top: 2vh;
     display: flex;
     justify-content: end;
     width: 100%;
@@ -111,6 +128,9 @@ label{
     width: 20vw;
     height: 5vh;
     background-color: #0095C6;
+}
+.section-bottom{
+    height: 90vh;
 }
 
 }
@@ -174,7 +194,7 @@ label{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 80vh;
+        height: 85vh;
         width: 55vw;
         background-color: #0095C6 ;
     }
@@ -190,10 +210,27 @@ label{
         border: transparent 20px inset;
         background-color: #c4c2c2;
     }
+    .btn-a{
+        border-radius: 10px;
+        font-size: 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15vw;
+        height: 4vh;
+        border: none;
+        background-color: #026e92;
+        color: white;
+        margin-right: 10vw;
+    }
+    .btn-a:active{
+        background-color: #024157;
+    }
     .btn{
         border-radius: 10px;
         font-size: var(--b);
-        width: 25vw;
+        width: 15vw;
         height: 4vh;
         border: none;
         background-color: #026e92;
@@ -206,9 +243,9 @@ label{
         width: 40vw;
     }
     .btnLogout{
-        margin: 2vh;
+        margin-top: 2vh;
         display: flex;
-        justify-content: end;
+        justify-content: center;
         width: 100%;
     }
     .configuracao{
@@ -222,6 +259,9 @@ label{
         width: 20vw;
         height: 5vh;
         background-color: #0095C6;
+    }
+    .section-bottom{
+        height: 90vh;
     }
 }
 @media (min-width:768px) and (max-width:1024px){
@@ -285,7 +325,7 @@ label{
         justify-content: center;
         align-items: center;
         height: 80vh;
-        width: 55vw;
+        width: 70vw;
         background-color: #0095C6 ;
     }
     label{
@@ -300,10 +340,27 @@ label{
         border: transparent 20px inset;
         background-color: #c4c2c2;
     }
+    .btn-a{
+        border-radius: 10px;
+        font-size: 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30vw;
+        height: 4vh;
+        border: none;
+        background-color: #026e92;
+        color: white;
+        margin-right: 10vw;
+    }
+    .btn-a:active{
+        background-color: #024157;
+    }
     .btn{
         border-radius: 10px;
         font-size: var(--b);
-        width: 25vw;
+        width: 30vw;
         height: 4vh;
         border: none;
         background-color: #026e92;
@@ -313,10 +370,10 @@ label{
         background-color: #024157;
     }
     .form{
-        width: 40vw;
+        width: 50vw;
     }
     .btnLogout{
-        margin: 2vh;
+        margin-top: 2vh;
         display: flex;
         justify-content: end;
         width: 100%;
@@ -332,6 +389,9 @@ label{
         width: 25vw;
         height: 5vh;
         background-color: #0095C6;
+    }
+    .section-bottom{
+        height: 90vh;
     } 
 }
 @media(max-width:767px){
@@ -406,6 +466,23 @@ label{
         border: transparent 20px inset;
         background-color: #c4c2c2;
     }
+    .btn-a{
+        border-radius: 10px;
+        font-size: 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40vw;
+        height: 4vh;
+        border: none;
+        background-color: #026e92;
+        color: white;
+        margin-right: 10vw;
+    }
+    .btn-a:active{
+        background-color: #024157;
+    }
     .btn{
         border-radius: 10px;
         font-size: var(--b);
@@ -422,7 +499,7 @@ label{
         width: 70vw;
     }
     .btnLogout{
-        margin: 2vh;
+        margin-top: 2vh;
         display: flex;
         justify-content: end;
         width: 100%;
