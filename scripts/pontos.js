@@ -7,7 +7,7 @@ msgPontos.innerText = user.pontos
 function validarRecibo(inputNr, inputValor) {
     let msg = document.querySelector(".valida");
     let aux = "12345678"
-    if(inputNr === inputNr && inputValor.value != ""){
+    if(inputNr.value === aux && inputValor.value != ""){
         msg.classList.add("valido")
         msg.innerText = "Verificação feita pontos adicionados na conta";
         let pontosUser = parseInt(user.pontos)
@@ -25,5 +25,12 @@ function validarRecibo(inputNr, inputValor) {
         }, 5000);
         return false;
     }
+    msg.setAttribute("class","erro");
+    msg.innerText = "Informações incorretas foram inseridas!";
+    setTimeout(function(){
+      msg.innerText = "";
+      msg.removeAttribute("class","erro")
+      },5000)
+        return false;
 
 }
