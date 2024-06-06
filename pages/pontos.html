@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos</title>
+   <!-- Componentes -->
+   <link rel="stylesheet" href="../styles/chatbot.css">
+   <link rel="stylesheet" href="../styles/header.css">
+   <link rel="stylesheet" href="../styles/footer.css">
+
+   <link rel="stylesheet" href="../styles/pages/pontos.css">
+   <script src="../scripts/pontos.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="../index.html">
+                    <h2>Fiapinhos</h2>
+                </a>
+                <ul>
+                    <a href="">
+                        <li>Ajude</li>
+                    </a>
+                    <a href="">
+                        <li>Espécies ameaçadas</li>
+                    </a>
+                    <a href="">
+                        <li>Denuncie</li>
+                    </a>
+                </ul>
+                <a href="./perfil.html"><img id="profile" src="../assets/images/profile.svg" alt="Imagem do perfil da pessoa"></a>
+            </nav>
+        </header>
+        <section class="title">
+            <h1>Verifique o seu recibo e receba seus pontos</h1>
+            <p>Pontos: <span id="pontos"></span></p>
+        </section>
+        <div class="conteudo">
+        <div class="around form-pontos">
+        <form 
+        action="./pontos.html"
+        method="get"
+        onsubmit="return validarRecibo(idNrRecibo, idValor)">
+            <fieldset class="fieldset">
+                <span id="validaLogin" class="validaLogin"></span>
+                    <div class="form-group">
+                        <label class="label-Email" for="idNrRecibo">Numero do recibo</label>
+                        <input
+                        class="input"
+                        type="text"
+                        pattern="[0-9]{8}"
+                        name="txtRecibo"
+                        id="idNrRecibo"
+                        placeholder="Digite o numero do recibo aqui"
+                        oninvalid="this.setCustomValidity('Digite um numero de 8 digitos')">
+                        <label class="label-senha" for="idValor">Valor do recibo</label>
+                        <input
+                        class="input"
+                        type="text"
+                        name="txtValor"
+                        id="idValor"
+                        placeholder="Digite o valor do recibo"
+                        >
+                    <div class="btnSubmit">
+                         <button class="btn btnEnviar" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form> 
+    </div>
+</div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <nav>
+                <p>Nosso objetivo como os <span class="highlight">Fiapinhos</span> é ajudar a resolver um importante problema: as espécies marítmas
+                    ameaçadas de extinção</p>
+                <table class="footer-pages">
+                    <thead>
+                        <tr>
+                            <th>Espécies ameaçadas</th>
+                            <th>Denuncie</th>
+                            <th>Ajude</th>
+                            <th>Loja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                        </tr>
+                        <tr>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                        </tr>
+                        <tr>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                        </tr>
+                        <tr>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                            <td>Button</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+            <br><br>
+            <hr>
+            <br>
+            <div class="final-footer">
+                <h3>Fiapinhos</h3>
+                <button class="contact-btn">Entre em contato</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

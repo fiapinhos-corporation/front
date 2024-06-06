@@ -1,0 +1,82 @@
+@import url(../globals.css);
+.container{
+    height: 100vh;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color); 
+    justify-content: center;
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    font-size: var(--b);
+    color: white;
+}
+.title p{
+ font-weight: 500;
+}
+.input{
+    border: inset 10px transparent ;
+    background-color: #c4c2c2;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.form-group{  
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom:10px ;
+    margin-top: 10px;
+}
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.form-pontos{
+    display: flex;
+    width: 25vw;
+    height: 35vh;
+    justify-content: center;
+    align-items: center;
+}
+.btnSubmit{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.btnSubmit button{
+    background-color: var(--primary-color);
+}
+.btnSubmit button:active{
+    background-color: #026e92;
+}
+.btn{
+    cursor:pointer;
+    border-radius: 10px;
+    width: 10vw;
+    height: 3vh;
+    border: none;
+    background-color: #026e92;
+    color: white;
+}
+.fieldset{
+    border: none;
+}
+.around{
+    border-radius: 5px;
+    background-color: #d5ecfa;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 10px 10px rgba(65, 64, 64, 0.452);
+}
