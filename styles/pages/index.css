@@ -27,7 +27,7 @@
     width: 100%;
 }
 
-#especies-ameacadas main{
+#especies-ameacadas .main{
     width: 40%;
     display: flex;
     flex-direction: column;
