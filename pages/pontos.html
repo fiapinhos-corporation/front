@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/save-turtle.ico">
+
     <title>Pontos</title>
    <!-- Componentes -->
    <link rel="stylesheet" href="../styles/chatbot.css">
@@ -16,6 +18,7 @@
 
    <link rel="stylesheet" href="../styles/pages/pontos.css">
    <script src="../scripts/pontos.js" defer></script>
+   <script src="../scripts/header.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -39,6 +42,19 @@
                         </li>
                     </ul>
                     <a href="./perfil.html"><img id="profile" src="../assets/images/profile.svg" alt="Imagem de perfil da pessoa"></a>
+                </nav>
+                <button class="btn-mobile">
+                    <img src="../assets/icons/menu.svg" alt="Menu Mobile">
+                </button>
+        
+                <nav class="nav-mobile">
+                    <ul class="ul-mobile">
+                        <li><a href="./previsao.html">Calcular reciclagem</a></li>
+                        <li><a href="./especies-ameacadas.html">Espécies ameaçadas</a></li>
+                        <li><a href="./Quem somos.html">Quem somos</a></li>
+                        <li><a href="./loja.html">Loja</a></li>
+                        <li><a href="./perfil.html">Perfil</a></li>
+                    </ul>
                 </nav>
         </header>
         <section class="title">
@@ -84,50 +100,26 @@
     <footer>
         <div class="wrapper">
             <nav>
-                <p>Nosso objetivo como os <span class="highlight">Fiapinhos</span> é ajudar a resolver um importante problema: as espécies marítmas
+                <p>Nosso objetivo como os <span class="highlight">HelpTurtle</span> é ajudar a resolver um importante problema: as espécies marítmas
                     ameaçadas de extinção</p>
                 <table class="footer-pages">
                     <thead>
                         <tr>
-                            <th>Espécies ameaçadas</th>
-                            <th>Denuncie</th>
-                            <th>Ajude</th>
-                            <th>Loja</th>
+                            <th><a href="./especies-ameacadas.html" class="no-decor">Espécies ameaçadas</a></th>
+                            <th><a href="./denuncie.html" class="no-decor">Denuncie</a></th>
+                            <th><a href="./previsao.html" class="no-decor">Ajude</a></th>
+                            <th><a href="./loja.html" class="no-decor">Loja</a></th>
+                            <th><a href="./quem-somos.html" class="no-decor">Quem Somos</a></th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                        </tr>
-                        <tr>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                        </tr>
-                        <tr>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                        </tr>
-                        <tr>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                        </tr>
-                    </tbody>
+                    
                 </table>
             </nav>
             <br><br>
             <hr>
             <br>
             <div class="final-footer">
-                <h3>Fiapinhos</h3>
+                <h3>HelpTurtle</h3>
                 <button class="contact-btn">Entre em contato</button>
             </div>
         </div>

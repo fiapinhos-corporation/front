@@ -1,212 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Denuncie</title>
 
-    <!-- Componentes -->
-    <link rel="stylesheet" href="../styles/button.css" />
-    <link rel="stylesheet" href="../styles/chatbot.css" />
-    <link rel="stylesheet" href="../styles/header.css" />
-    <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="../styles/hero.css" />
-    <link rel="stylesheet" href="../styles/contato.css" />
-    <link rel="stylesheet" href="../styles/globals.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../assets/save-turtle.ico">
 
-    <!-- scripts-->
-    <script src="../scripts/contato.js" defer></script>
-    <!-- Página -->
-    <link rel="stylesheet" href="../styles/pages/denuncie.css" />
-  </head>
+  <title>Denuncie</title>
 
-  <body>
-    <header>
-      <nav>
-        <a href="../index.html">
-          <h2>HelpTurtle</h2>
-        </a>
-        <ul>
-          <li>
-            <a href="./previsao.html">Calcular reciclagem</a>
-          </li>
-          <li>
-            <a href="./especies-ameacadas.html">Espécies ameaçadas</a>
-          </li>
-          <li>
-            <a href="./denuncie.html">Denuncie</a>
-          </li>
-          <li>
-            <a href="./loja.html">Loja</a>
-          </li>
-        </ul>
-        <a href="./perfil.html"
-          ><img
-            id="profile"
-            src="../assets/images/profile.svg"
-            alt="Imagem de perfil da pessoa"
-        /></a>
-      </nav>
+  <!-- Componentes -->
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" href="../styles/chatbot.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/footer.css" />
+  <link rel="stylesheet" href="../styles/hero.css" />
+  <link rel="stylesheet" href="../styles/contato.css" />
+  <link rel="stylesheet" href="../styles/globals.css" />
 
-    </header>
-    <button class="chat">
-      <img src="../assets/icons/message.svg" alt="" />
+  <!-- scripts-->
+  <script src="../scripts/contato.js" defer></script>
+  <script src="../scripts/header.js" defer></script>
+  <!-- Página -->
+  <link rel="stylesheet" href="../styles/pages/denuncie.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">
+        <h2>HelpTurtle</h2>
+      </a>
+      <ul>
+        <li>
+          <a href="./previsao.html">Calcular reciclagem</a>
+        </li>
+        <li>
+          <a href="./especies-ameacadas.html">Espécies ameaçadas</a>
+        </li>
+        <li>
+          <a href="./denuncie.html">Denuncie</a>
+        </li>
+        <li>
+          <a href="./loja.html">Loja</a>
+        </li>
+      </ul>
+      <a href="./perfil.html"><img id="profile" src="../assets/images/profile.svg"
+          alt="Imagem de perfil da pessoa" /></a>
+    </nav>
+    <button class="btn-mobile">
+      <img src="../assets/icons/menu.svg" alt="Menu Mobile">
     </button>
-    <section class="hero" id="denuncie">
+
+    <nav class="nav-mobile">
+      <ul class="ul-mobile">
+        <li><a href="./previsao.html">Calcular reciclagem</a></li>
+        <li><a href="./especies-ameacadas.html">Espécies ameaçadas</a></li>
+        <li><a href="./quem-somos.html">Quem somos</a></li>
+        <li><a href="./loja.html">Loja</a></li>
+        <li><a href="./perfil.html">Perfil</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <button class="chat">
+    <img src="../assets/icons/message.svg" alt="" />
+  </button>
+  <section class="hero" id="denuncie">
+    <div class="wrapper">
+      <div class="wrapper-content">
+        <h1>
+          DENUNCIE
+          <br />
+          <span class="highlight">AGORA</span>
+        </h1>
+        <h3>
+          Além do descarte, ajudamos por denunciar lixo descartado
+          incorretamente. Lembre-se: isso é CRIME.
+        </h3>
+        <a href="#primeiro-meio" class="no-decor"><button>Saiba como denunciar</button></a>
+      </div>
+    </div>
+  </section>
+
+  <main id="primeiro-meio">
+    <h2>Meios de Denúncia</h2>
+    <div class="meio-de-comunicacao">
+      <img src="../assets/images/ibama.webp" alt="Ibama" />
+      <aside>
+        <p>
+          Para o Ibama: denúncias pela Linha Verde (0800 618080), na sede em
+          Brasília ou na superintendência do Estado
+        </p>
+        <a href="#greenpiece" class="no-decor"><button>Saiba Mais</button></a>
+      </aside>
+    </div>
+    <div class="meio-de-comunicacao">
+      <img src="../assets/images/cetesb.webp" alt="Cetesbe" />
+      <aside>
+        <p>
+          Para o órgão estadual do meio ambiente (ex: CETESB - Companhia
+          Ambiental do Estado de São Paulo): procure a regional mais próxima
+        </p>
+        <a href="#greenpiece" class="no-decor"><button>Saiba Mais</button></a>
+      </aside>
+    </div>
+    <div class="meio-de-comunicacao">
+      <img src="../assets/images/policia.webp" alt="Polícia militar" />
+      <aside>
+        <p>
+          Para a Polícia Civil (ex: Policia Civil de São Paulo): faça a
+          denúncia pelo telefone 147
+        </p>
+        <a href="#greenpiece" class="no-decor"><button>Saiba Mais</button></a>
+      </aside>
+    </div>
+    <section id="greenpiece">
+      <div class="duvida">
+        <img src="../assets/images/quote.svg" alt="Duvida" />
+        <h2>Em cada caso de crime, qual dos órgãos devo comunicar?</h2>
+      </div>
       <div class="wrapper">
-        <div class="wrapper-content">
-          <h1>
-            DENUNCIE
-            <br />
-            <span class="highlight">AGORA</span>
-          </h1>
+        <aside>
           <h3>
-            Além do descarte, ajudamos por denunciar lixo descartado
-            incorretamente. Lembre-se: isso é CRIME.
+            Encorajamos você fortemente a ver mais informações juntamente ao
+            <span class="highlight">Greenpiece</span>.
           </h3>
-          <button>Saiba como denunciar</button>
-        </div>
+          <a href="https://www.greenpeace.org/brasil/faca-uma-denuncia-ambiental/#:~:text=1.,procure%20a%20regional%20mais%20pr%C3%B3xima."
+            target="_blank" class="no-decor"><button>Saiba Mais</button></a>
+        </aside>
+        <img src="../assets/images/greenpiece.webp" alt="Greenpiece" />
       </div>
     </section>
+  </main>
 
-    <main>
-      <h2>Meios de Denúncia</h2>
-      <div class="meio-de-comunicacao">
-        <img src="../assets/images/ibama.webp" alt="Ibama" />
-        <aside>
-          <p>
-            Para o Ibama: denúncias pela Linha Verde (0800 618080), na sede em
-            Brasília ou na superintendência do Estado
-          </p>
-          <button>Saiba Mais</button>
-        </aside>
-      </div>
-      <div class="meio-de-comunicacao">
-        <img src="../assets/images/cetesb.webp" alt="Cetesbe" />
-        <aside>
-          <p>
-            Para o órgão estadual do meio ambiente (ex: CETESB - Companhia
-            Ambiental do Estado de São Paulo): procure a regional mais próxima
-          </p>
-          <button>Saiba Mais</button>
-        </aside>
-      </div>
-      <div class="meio-de-comunicacao">
-        <img src="../assets/images/policia.webp" alt="" />
-        <aside>
-          <p>
-            Para a Polícia Civil (ex: Policia Civil de São Paulo): faça a
-            denúncia pelo telefone 147
-          </p>
-          <button>Saiba Mais</button>
-        </aside>
-      </div>
-      <section id="greenpiece">
-        <div class="duvida">
-          <img src="../assets/images/quote.svg" alt="Duvida" />
-          <h2>Em cada caso de crime, qual dos órgãos devo comunicar?</h2>
-        </div>
-        <div class="wrapper">
-          <aside>
-            <h3>
-              Encorajamos você fortemente a ver mais informações juntamente ao
-              <span class="highlight">Greenpiece</span>.
-            </h3>
-            <button>Saiba Mais</button>
-          </aside>
-          <img src="../assets/images/greenpiece.webp" alt="" />
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="wrapper">
-        <nav>
-          <p>
-            Nosso objetivo como os <span class="highlight">Fiapinhos</span> é
-            ajudar a resolver um importante problema: as espécies marítmas
-            ameaçadas de extinção
-          </p>
-          <table class="footer-pages">
-            <thead>
-              <tr>
-                <th>Espécies ameaçadas</th>
-                <th>Denuncie</th>
-                <th>Ajude</th>
-                <th>Loja</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Button</td>
-                <td>Button</td>
-                <td>Button</td>
-                <td>Button</td>
-              </tr>
-              <tr>
-                <td>Button</td>
-                <td>Button</td>
-                <td>Button</td>
-                <td>Button</td>
-              </tr>
-              <tr>
-                <td>Button</td>
-                <td>Button</td>
-                <td>Button</td>
-                <td>Button</td>
-              </tr>
-              <tr>
-                <td>Button</td>
-                <td>Button</td>
-                <td>Button</td>
-                <td>Button</td>
-              </tr>
-            </tbody>
-          </table>
-        </nav>
-        <br /><br />
-        <hr />
-        <br />
-        <div class="final-footer">
-          <h3>Fiapinhos</h3>
-          <button class="contact-btn">Entre em contato</button>
-        </div>
-      </div>
-    </footer>
-    <dialog id="favDialog">
-      <h3>FORMULÁRIO DE CONTATO</h3>
-      <form method="dialog">
+  <footer>
+    <div class="wrapper">
+      <nav>
         <p>
-          <label for="nomeUser">Nome</label><br />
-          <input
-            name="nomeUser"
-            id="nomeUser"
-            type="text"
-            autocomplete="name"
-          />
-          <br /><br />
-          <label for="emailUser">E-mail</label><br />
-          <input
-            name="emailUser"
-            id="emailUser"
-            type="email"
-            autocomplete="email"
-          />
-          <br /><br />
-          <label for="Mensagem">Mensagem</label><br />
-          <textarea
-            name="Mensagem"
-            id="messageUser"
-            rows="7"
-            cols="50"
-            autocomplete="name"
-          ></textarea>
+          Nosso objetivo como os <span class="highlight">HelpTurtle</span> é
+          ajudar a resolver um importante problema: as espécies marítmas
+          ameaçadas de extinção
         </p>
-        <div>
-          <button id="cancel" type="reset">Cancelar</button>
-          <button type="submit" id="send-message">Enviar</button>
-        </div>
-      </form>
-    </dialog>
-  </body>
+        <table class="footer-pages">
+          <thead>
+
+            <tr>
+              <th><a href="./especies-ameacadas.html" class="no-decor">Espécies ameaçadas</a></th>
+              <th><a href="./denuncie.html" class="no-decor">Denuncie</a></th>
+              <th><a href="./previsao.html" class="no-decor">Ajude</a></th>
+              <th><a href="./loja.html" class="no-decor">Loja</a></th>
+              <th><a href="./quem-somos.html" class="no-decor">Quem Somos</a></th>
+            </tr>
+          </thead>
+
+        </table>
+      </nav>
+      <br /><br />
+      <hr />
+      <br />
+      <div class="final-footer">
+        <h3>HelpTurtle</h3>
+        <button class="contact-btn">Entre em contato</button>
+      </div>
+    </div>
+  </footer>
+  <dialog id="favDialog">
+    <h3>FORMULÁRIO DE CONTATO</h3>
+    <form method="dialog">
+      <p>
+        <label for="nomeUser">Nome</label><br />
+        <input name="nomeUser" id="nomeUser" type="text" autocomplete="name" />
+        <br /><br />
+        <label for="emailUser">E-mail</label><br />
+        <input name="emailUser" id="emailUser" type="email" autocomplete="email" />
+        <br /><br />
+        <label for="Mensagem">Mensagem</label><br />
+        <textarea name="Mensagem" id="messageUser" rows="7" cols="50" autocomplete="name"></textarea>
+      </p>
+      <div>
+        <button id="cancel" type="reset">Cancelar</button>
+        <button type="submit" id="send-message">Enviar</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+
 </html>

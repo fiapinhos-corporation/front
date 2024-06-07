@@ -82,7 +82,7 @@ main {
   gap: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .card-item {
   display: flex;

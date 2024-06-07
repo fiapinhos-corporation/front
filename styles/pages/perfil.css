@@ -281,7 +281,7 @@ label{
     }
     .textos h1{
         font-weight: 400;
-        font-size: var(--b);
+        font-size: 30px;
         letter-spacing: 1px;
         padding-bottom: 10%;
     }
@@ -404,14 +404,14 @@ label{
         height: 20vh;
     }
     .section-top{
-        height: 30vh;   
+        height: max-content;   
     }
     .textos{
         color: white; 
     }
     .textos h1{
         font-weight: 400;
-        font-size: var(--l);
+        font-size: 20px;
         letter-spacing: 1px;
         padding-bottom: 10%;
     }
@@ -419,8 +419,8 @@ label{
         display: flex;
         flex-direction: row; 
         justify-content: space-around;   
-        margin-top: 5vh;
-        margin-right: 5vh;
+        margin-top: 0;
+        margin-right: 0;
     }
     .img-profile{
         display: none;
@@ -451,12 +451,13 @@ label{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 80vh;
+        height: max-content;
         width: 100vw;
         background-color: #0095C6 ;
+        padding-bottom: 20px;
     }
     label{
-        font-size: var(--b);
+        font-size: 24px;
         padding-top: 10px;
         padding-bottom: 3px;
     }
@@ -469,7 +470,7 @@ label{
     }
     .btn-a{
         border-radius: 10px;
-        font-size: 20px;
+        font-size: 14px;
         text-decoration: none;
         display: flex;
         align-items: center;
@@ -486,7 +487,7 @@ label{
     }
     .btn{
         border-radius: 10px;
-        font-size: var(--b);
+        font-size: 14px;
         width: 40vw;
         height: 4vh;
         border: none;
@@ -517,4 +518,7 @@ label{
         height: 5vh;
         background-color: #0095C6;
     } 
+    .input span{
+        font-size: 16px;
+    }
 }

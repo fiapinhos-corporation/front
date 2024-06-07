@@ -4,6 +4,7 @@ footer{
     color: white;
     width: 100%;
 }
+footer p
 
 .resize-position{
     position: absolute !important;
@@ -90,13 +91,40 @@ footer table tbody tr td{
     justify-self: center;
     margin: 0 15px;
 }
+footer table tbody{
+    display: none;
+}
 
-@media screen and (max-width: 480px){
+.contact-btn{
+    border: none;
+
+}
+a{
+    color: white;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    footer nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 767px){
     footer .wrapper, footer .wrapper nav, footer .wrapper .final-footer{
+        display: flex;
+        justify-items: center;
         justify-content: center; 
+        align-items: center;
+        align-content: center;
     } 
-    footer .wrapper .final-footer{
+    .final-footer, footer{
+        display: flex;
         gap: 20px;
+        flex-direction: column !important;
+    }
+    footer .wrapper{
+        display: flex;
+        flex-direction: column !important;
     }
     footer table{
         margin: 20px 0;
@@ -107,6 +135,7 @@ footer table tbody tr td{
     }
     footer table th{
         width: 100% !important;
+        text-align: center;
     }
     footer table thead tr{
         width: 100%;
@@ -116,13 +145,22 @@ footer table tbody tr td{
         font-size: 24px;
         text-align: left;    
     }
-        
+    footer nav p{ 
+        max-width: none !important;
+        width: 100%;
+        text-align: center;
+    }  
+    footer .wrapper nav{
+        width: max-content;
+        align-self: center;
+    }       
+    footer .wrapper{
+        align-items: center;
+    }
+    
 
 
 } 
-footer table tbody{
-    display: none;
-}
 
 
 
