@@ -138,7 +138,7 @@ label{
 @media (min-width:1025px) and (max-width:1400px){
     .container{
         height: 100vh;
-        background-position-y: 60%;
+        background-position-y: 30%;
         background-size: 100%;
         background-repeat: no-repeat;
         background-image: url(../../assets/images/fundo_para_celular_perfil.png);
@@ -281,7 +281,7 @@ label{
     }
     .textos h1{
         font-weight: 400;
-        font-size: var(--l);
+        font-size: var(--b);
         letter-spacing: 1px;
         padding-bottom: 10%;
     }
@@ -289,17 +289,17 @@ label{
         display: flex;
         flex-direction: row; 
         justify-content: space-around;   
-        margin-top: 5vh;
+        margin-top: 2vh;
         margin-right: 5vh;
     }
     .img-profile{
-        height: 20vh;
+        height: 15vh;
     }
     .wrapper{
         gap: 3vw;
         display: flex;
         flex-direction: row; 
-        margin-top: 5vh;
+        margin-top: 2vh;
     }
     .wrapper-bottom{
         justify-content: space-around;
