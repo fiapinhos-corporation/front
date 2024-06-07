@@ -25,3 +25,8 @@
 .highlight{
     color: var(--third-color);
 }
+
+a.no-decor{
+    text-decoration: none;
+    
+}

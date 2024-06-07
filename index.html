@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-    <title>Fiapinhos</title>
+    <link rel="icon" type="image/x-icon" href="./assets/save-turtle.ico">
+    <title>HelpTurtle</title>
     <!-- componentes -->
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/hero.css">
@@ -17,7 +17,7 @@
 
     <script src="./scripts/index.js" defer></script>
     <!-- página index -->
-     <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="./styles/pages/index.css">
 
     <script src="./scripts/contato.js" defer></script>
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    
+
     <header class="h-transparent">
         <nav>
             <a href="./index.html">
@@ -45,23 +45,24 @@
                     <a href="./pages/loja.html">Loja</a>
                 </li>
             </ul>
-            <a href="./pages/perfil.html"><img id="profile" src="./assets/images/profile.svg" alt="Imagem de perfil da pessoa"></a>
-            
-            
+            <a href="./pages/perfil.html"><img id="profile" src="./assets/images/profile.svg"
+                    alt="Imagem de perfil da pessoa"></a>
+
+
         </nav>
         <button class="btn-mobile">
             <img src="./assets/icons/menu.svg" alt="Menu Mobile">
-          </button>
-              
-      <nav class="nav-mobile">
-        <ul class="ul-mobile">
-            <li><a href="">Calcular reciclagem</a></li>
-            <li><a href="">Espécies ameaçadas</a></li>
-            <li><a href="">Denuncie</a></li>
-            <li><a href="">Loja</a></li>
-            <li><a href="">Perfil</a></li>
-        </ul>
-      </nav> 
+        </button>
+
+        <nav class="nav-mobile">
+            <ul class="ul-mobile">
+                <li><a href="./pages/previsao.html">Calcular reciclagem</a></li>
+                <li><a href="./pages/especies-ameacadas.html">Espécies ameaçadas</a></li>
+                <li><a href="./pages/quem-somos.html">Quem somos</a></li>
+                <li><a href="./pages/loja.html">Loja</a></li>
+                <li><a href="./pages/perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
     </header>
     <button class="chat">
         <img src="./assets/icons/message.svg" alt="">
@@ -83,7 +84,7 @@
             <main>
                 <h2>694 espécies marítimas ameaçadas de extinção. Principal motivo? Ação do homem.</h2>
                 <h4>*Segundo estudo da IUCN</h4>
-                <button>Saiba mais</button>
+                <a href="./pages/especies-ameacadas.html" class="no-decor"><button>Saiba mais</button></a>
             </main>
         </div>
     </section>
@@ -94,7 +95,7 @@
                 <h3>Mesmo que ache que é pouco, se cada um o fizer, ajudamos para um mundo melhor. Você sabe como
                     descartar
                     corretamente seu lixo?</h3>
-                <button>Saiba mais</button>
+                <a href="./pages/previsao.html" class="no-decor"><button>Saiba mais</button></a>
             </div>
         </div>
     </section>
@@ -105,78 +106,55 @@
                     <span class="highlight">AGORA</span></h2>
                 <h3>Além do descarte, ajudamos por denunciar lixo descartado incorretamente. Lembre-se: isso é CRIME.
                 </h3>
-                <button>Saiba como denunciar</button>
+                <a href="./pages/denuncie.html" class="no-decor"><button>Saiba como denunciar</button></a>
             </div>
         </div>
     </section>
     <dialog id="favDialog">
         <h3>FORMULÁRIO DE CONTATO</h3>
         <form method="dialog">
-          <p>
-            <label for="nomeUser">Nome</label><br>
-            <input name="nomeUser" id="nomeUser" type="text" autocomplete="name">
-            <br><br>
-            <label for="emailUser">E-mail</label><br>
-            <input name="emailUser" id="emailUser" type="email" autocomplete="email">
-            <br><br>
-            <label for="Mensagem">Mensagem</label><br>
-            <textarea name="Mensagem"  id="messageUser" rows="7" cols="50" autocomplete="name"></textarea>
+            <p>
+                <label for="nomeUser">Nome</label><br>
+                <input name="nomeUser" id="nomeUser" type="text" autocomplete="name">
+                <br><br>
+                <label for="emailUser">E-mail</label><br>
+                <input name="emailUser" id="emailUser" type="email" autocomplete="email">
+                <br><br>
+                <label for="Mensagem">Mensagem</label><br>
+                <textarea name="Mensagem" id="messageUser" rows="7" cols="50" autocomplete="name"></textarea>
 
-          </p>
-          <div>
-            <button id="cancel" type="reset">Cancelar</button>
-            <button type="submit" id="send-message">Enviar</button>
-          </div>
+            </p>
+            <div>
+                <button id="cancel" type="reset">Cancelar</button>
+                <button type="submit" id="send-message">Enviar</button>
+            </div>
         </form>
-      </dialog>
+    </dialog>
     <footer>
         <div class="wrapper">
             <nav>
-                <p>Nosso objetivo como os <span class="highlight">Fiapinhos</span> é ajudar a resolver um importante problema: as espécies marítmas
+                <p>Nosso objetivo como a <span class="highlight">HelpTurtle</span> é ajudar a resolver um importante
+                    problema: as espécies marítmas
                     ameaçadas de extinção</p>
                 <table class="footer-pages">
                     <thead>
                         <tr>
-                            <th>Espécies ameaçadas</th>
-                            <th>Denuncie</th>
-                            <th>Ajude</th>
-                            <th>Loja</th>
+                            <th><a href="./pages/especies-ameacadas.html" class="no-decor">Espécies ameaçadas</a></th>
+                            <th><a href="./pages/denuncie.html" class="no-decor">Denuncie</a></th>
+                            <th><a href="./pages/previsao.html" class="no-decor">Ajude</a></th>
+                            <th><a href="./pages/loja.html" class="no-decor">Loja</a></th>
+                            <th><a href="./pages/quem-somos.html" class="no-decor">Quem Somos</a></th>
+
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                        </tr>
-                        <tr>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                        </tr>
-                        <tr>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                        </tr>
-                        <tr>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                            <td>Button</td>
-                        </tr>
-                    </tbody>
                 </table>
             </nav>
             <br><br>
             <hr>
             <br>
             <div class="final-footer">
-                <h3>Fiapinhos</h3>
-                <button  class="contact-btn">Entre em contato</button>
+                <h3>Help Turtle</h3>
+                <button class="contact-btn">Entre em contato</button>
             </div>
         </div>
     </footer>

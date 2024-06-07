@@ -82,3 +82,86 @@
 footer{
     background-color: var(--black);
 }
+
+@media screen and (min-width: 1025px) and(max-width: 1200px) {
+    #especies-ameacadas-2 div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #especies-ameacadas-2 main {
+        width: 100%;
+    }
+
+    .section-especies-ameacadas main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #especies-ameacadas-2 div .subtitle {
+        font-size: 30px;
+    }
+
+    .section-especies-ameacadas .add-info {
+        font-size: 24px;
+    }
+    img{
+        max-width: 150px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #especies-ameacadas-2 div {
+        flex-direction: column;
+        align-items: center;
+    }
+    #especies-ameacadas-2 main{
+        width: calc(100% - 40px);
+
+    }
+    #first-section-ea main{
+        display: flex;
+        flex-direction: column;
+        font-size: 27px !important;
+        width: calc(100% - 30px);
+    }
+    .section-especies-ameacadas{
+        display: flex;
+        flex-direction: column;
+        font-size: 27px !important;
+        padding: 20px;
+    }
+    .section-especies-ameacadas main {
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        font-size: 40vw;
+    }
+    #especies-ameacadas-2 div .subtitle {
+        font-size: 70px !important;
+    }
+
+    #especies-ameacadas-2 .highlight{
+        font-size: 40px !important;
+    }
+    .section-especies-ameacadas {
+        min-height: 0;
+        gap: 20px;
+    }
+    .section-especies-ameacadas .add-info {
+        font-size: 24px !important;
+    }
+    #especies-ameacadas2 .main{
+        margin: 20px !important;
+        width: calc();
+    }
+    img{
+        max-width: 250px !important;
+    }
+    #especies-ameacadas-2 div {
+        margin-top: 100px;
+    }
+}

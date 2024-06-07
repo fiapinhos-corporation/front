@@ -112,3 +112,38 @@ main .meio-de-comunicacao aside{
     width: max-content;
     object-fit: contain;
 }
+
+@media screen and (max-width: 1024px) {
+    #denuncie .wrapper, #denuncie .wrapper .wrapper-content, main, #greenpiece .duvida, #greenpiece .wrapper{
+        width: calc(100% - 30px) !important;
+        padding: 30px 15px !important;
+
+    }
+    h1{
+        font-size: 50px !important;
+    }
+    main h2{
+        text-align: center;
+    }
+
+    .meio-de-comunicacao{
+        flex-direction: column !important;
+        margin: 20px 0;
+    }
+    
+    #greenpiece .duvida, #greenpiece .wrapper, #greenpiece{
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    #greenpiece .duvida img{
+        height: 140px;
+    }
+    #greenpiece .wrapper aside{
+        display: flex;
+        align-items: center;
+    }
+    #greenpiece .wrapper img{
+        height: 200px;
+    }
+    
+}

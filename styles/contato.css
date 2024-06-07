@@ -1,3 +1,4 @@
+
 #favDialog{
     margin: 0 auto;
     align-self: center;
@@ -40,6 +41,9 @@
     text-transform: uppercase;
     padding: 13px 23px;
     justify-content: center;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--green);
 }
 
 #favDialog h3{
@@ -47,4 +51,13 @@
     letter-spacing: 50%;
     font-weight: 500;
     margin: 10px 0;
+}
+
+@media screen and (max-width: 767px){
+    #favDialog input, #favDialog textarea{
+        width: calc(100% - 20px);
+    }
+    #favDialog{
+        margin: 20px;
+    }
 }

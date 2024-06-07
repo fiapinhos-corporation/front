@@ -49,7 +49,7 @@
         
         display: flex;
         width: 30vw;
-        height: 65vh;
+        height: max-content;
         justify-content: center;
         align-items: center;
         
@@ -68,6 +68,7 @@
         width: 20vw;
         display: flex;
         flex-direction: column;
+        height: max-content;
         
     }
     .btnSubmit{
@@ -172,7 +173,7 @@
         
         display: flex;
         width: 40vw;
-        height: 65vh;
+        height: max-content;
         justify-content: center;
         align-items: center;
         
@@ -288,7 +289,7 @@
         
         display: flex;
         width: 60vw;
-        height: 65vh;
+        height: max-content;
         justify-content: center;
         align-items: center;
         
@@ -404,7 +405,7 @@
         
         display: flex;
         width: 70vw;
-        height: 65vh;
+        height: max-content;
         justify-content: center;
         align-items: center;
         
@@ -520,7 +521,7 @@
         
         display: flex;
         width: 90vw;
-        height: 65vh;
+        height: max-content;
         justify-content: center;
         align-items: center;
         
