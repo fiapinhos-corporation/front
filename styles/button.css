@@ -1,4 +1,4 @@
-@import url(./globals.css);
+@import url('./globals.css');
 button {
     padding: 17px 56px;
     border: none;
@@ -15,4 +15,8 @@ button {
 button:hover{
     transition: 0.6s ease-in-out;
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 767px) {
+    
 }

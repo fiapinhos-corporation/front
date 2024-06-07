@@ -1,4 +1,4 @@
-@import url(./globals.css);
+@import url('./globals.css');
 footer{
     background-color: var(--primary-color);
     color: white;
@@ -120,6 +120,9 @@ footer table tbody tr td{
 
 
 } 
+footer table tbody{
+    display: none;
+}
 
 
 

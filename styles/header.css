@@ -1,4 +1,4 @@
-@import url(./globals.css);
+@import url('./globals.css');
 
 header nav{
     max-width: 1320px;
@@ -51,15 +51,16 @@ header:not(.h-transparent){
 .h-transparent{
     margin-bottom: -100px;
     background-color: transparent;
+    width: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
     header{
         width: 100%;
     }
     header nav{
-        width: 100%;
-        margin: 0 20px;
+        width: auto !important;
+        padding: 0 20px;
     }
     header nav ul{
         gap: 0;

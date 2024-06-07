@@ -1,4 +1,4 @@
-@import url(../globals.css);
+@import url('../styles/globals.css');
 /* adicionar chatbot como modal */
 .chat{
     padding: 30px;
