@@ -65,7 +65,7 @@ let listaUsuario = [
 function cadastrar(inputNome, inputEmail, inputSenha,inputSenhaAux, inputCPF,inputEndereco,inputCEP,inputTelefone){
     let msgStatus = document.querySelector(".valida")
 
-    if(inputSenha.value == inputSenhaAux.value && inputSenha.value != ""){
+    if(inputSenha.value == inputSenhaAux.value && inputSenha.value != "" && inputEmail.value != ""){
         msgStatus.setAttribute("class","sucesso");
         msgStatus.innerText = "Cadastro realizado com sucesso!";
 
