@@ -11,7 +11,7 @@
 }
 #dados-usuario-loja .wrapper {
   max-width: 1220px;
-  width: max-content;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -25,8 +25,13 @@
   width: 150px;
   padding: 50px 0 0 0;
   position: fixed;
-  left: 0;
+  
 }
+
+@media screen and (min-width: 768px) {
+ #search-category{left: 0;}
+}
+
 
 #search-btn{
   cursor: default !important;
@@ -112,4 +117,44 @@ main {
 
 .close-item{
     display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+
+  #search-category{
+    position: static;
+    margin-top: 0;
+    justify-self: center;
+    width: 100%;
+    border-radius: 0 0 16px 16px;
+    height: 50px;
+  }
+  #search-category button{
+    display: none;
+    width: min-content;
+  }
+  #search-category input{
+    width: 100%;
+  }
+
+  main{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .container-itens{
+    margin: 30px 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card-item:hover{
+    transform: none;
+  }
+  .card-item button{
+    transform: none;
+  }
+  #dados-usuario-loja .wrapper{
+    width: calc(100% - 30px);
+  }
+
 }
