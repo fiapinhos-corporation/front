@@ -1,7 +1,8 @@
 let usuario = JSON.parse(localStorage.getItem("usuario"));
 
 
-let nome = document.getElementById("nomeUser")
+
+let nome = document.getElementById("nomeUsuario")
 nome.innerText = usuario.nome
 
 let pontos = document.getElementById("pontosUser")
