@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/pages/perfil.css">
     <script src="../scripts/perfil.js" defer></script>
+    <link rel="stylesheet" href="../styles/globals.css">
 
     <title>Perfil</title>
 </head>
@@ -18,7 +19,7 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="./previsao.html">Calcular expectativa de preço</a>
+                        <a href="./previsao.html">Calcular reciclagem</a>
                     </li>
                     <li>
                         <a href="./especies-ameacadas.html">Espécies ameaçadas</a>
@@ -79,5 +80,25 @@
         </section>
     </div>
 </div>
+<dialog id="favDialog">
+    <h3>FORMULÁRIO DE CONTATO</h3>
+    <form method="dialog">
+      <p>
+        <label for="nomeUser">Nome</label><br>
+        <input name="nomeUser" id="nomeUser" type="text" autocomplete="name">
+        <br><br>
+        <label for="emailUser">E-mail</label><br>
+        <input name="emailUser" id="emailUser" type="email" autocomplete="email">
+        <br><br>
+        <label for="Mensagem">Mensagem</label><br>
+        <textarea name="Mensagem"  id="messageUser" rows="7" cols="50" autocomplete="name"></textarea>
+
+      </p>
+      <div>
+        <button id="cancel" type="reset">Cancelar</button>
+        <button type="submit" id="send-message">Enviar</button>
+      </div>
+    </form>
+  </dialog>
 </body>
 </html>

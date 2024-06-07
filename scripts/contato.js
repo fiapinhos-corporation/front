@@ -1,5 +1,6 @@
 const cancelButton = document.getElementById("cancel");
-const contact = document.querySelector(".contact-btn")
+let contact = document.querySelector(".contact-btn");
+
 const contactForm = document.getElementById('favDialog');
 const body = document.querySelector("body")
 const submitMessage = document.getElementById("send-message") 
