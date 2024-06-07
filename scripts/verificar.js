@@ -1,10 +1,9 @@
 /* Esse js serve para verificar se o user ta logado.*/
-let usuario = JSON.parse(localStorage.getItem("usuario"));
+let user = JSON.parse(localStorage.getItem("usuario"));
 
-if(usuario){
+if(user){
 console.log("User logado");
 
 }else{
-    window.alert("Você precisa ta logado para acessar essa pagina")
-    window.location.href = "../cadastro.html";
+    window.location.href = "../pages/cadastro.html";
 }
