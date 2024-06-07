@@ -48,13 +48,15 @@ main h2{
     font-size: var(--xl);
 }
 main img{
-    max-width: 300px;
+    width: 220px;
+    object-fit: contain;
 }
 main .meio-de-comunicacao{
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    gap: 40px;
 }
 main .meio-de-comunicacao aside{
     display: flex;
