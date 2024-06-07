@@ -8,30 +8,65 @@ let itens = [
   },
   {
     id: 2,
-    nome: "Cafeteira",
+    nome: "Sanduicheira",
     pontos: 200,
-    image: "../assets/images/cafeteira.webp",
-    tipo: "outros",
+    image:
+      "https://www.pontofrio-imagens.com.br/html/conteudo-produto/73/13341500/images/Sanduicheira-Ultra-S13.png",
+    tipo: "eletrodomestico",
   },
   {
     id: 3,
-    nome: "Cafeteira",
+    nome: "Microondas",
     pontos: 300,
-    image: "../assets/images/cafeteira.webp",
-    tipo: "livros",
+    image:
+      "https://brastemp.vtexassets.com/arquivos/ids/241515/Brastemp_Micro_ondas_BMS46AR_Imagem_lateral.png?v=638415376957530000",
+    tipo: "eletrodomestico",
   },
   {
     id: 4,
-    nome: "Cafeteira",
+    nome: "Geladeira",
     pontos: 400,
-    image: "../assets/images/cafeteira.webp",
-    tipo: "eletronicos",
+    image: "https://electrolux.vtexassets.com/arquivos/ids/211052/Refrigerator_IF56B_Electrolux_Portuguese_Detalhe1.png?v=637638815007700000",
+    tipo: "eletrodomestico",
   },
   {
     id: 5,
-    nome: "Pao de Queijo",
+    nome: "Sansung M14 5G",
     pontos: 400,
-    image: "../assets/images/cafeteira.webp",
+    image:
+      "https://images.samsung.com/is/image/samsung/p6pim/br/sm-m146bdbvzto/gallery/br-galaxy-m14-5g-sm-m146-sm-m146bdbvzto-536057289?$650_519_PNG$",
+    tipo: "eletronicos",
+  },
+  {
+    id: 6,
+    nome: "Xiaomi Redmi A2",
+    pontos: 400,
+    image:
+      "https://cdn.dooca.store/131031/products/celular-redmi-a2_450x600.png?v=1702664728&webp=0",
+    tipo: "eletronicos",
+  },
+  {
+    id: 7,
+    nome: "Apple Iphone 12 128gb",
+    pontos: 400,
+    image:
+      "https://planoscelular.claro.com.br/medias/300Wx300H-productCard-18001-zero.png?context=bWFzdGVyfGltYWdlc3w2MTYwOHxpbWFnZS9wbmd8YUdRekwyZzBNUzg1TnpNME56QXhOamM0TmpJeUx6TXdNRmQ0TXpBd1NGOXdjbTlrZFdOMFEyRnlaRjh4T0RBd01WOTZaWEp2TG5CdVp3fGRjMGU4ZjM0ODZjNmQ2YjU0YmFmNjllZTY4MDkzZWNkMDVkMjU3MjhhYzk0YjZjZTBkZjU2NzM5ZDliNjhjZWU",
+    tipo: "eletronicos",
+  },
+  {
+    id: 8,
+    nome: "Apple Ipad 5ª Gen.",
+    pontos: 400,
+    image:
+      "https://www.goimports.com.br/image/catalog/Air%205/ipad-air-select-wifi-spacegray-202203.png",
+    tipo: "eletronicos",
+  },
+  {
+    id: 9,
+    nome: "Sansung Tab S9",
+    pontos: 400,
+    image:
+      "https://images.samsung.com/is/image/samsung/p6pim/uk/2307/gallery/uk-galaxy-tab-s9-ultra-5g-x916-sm-x916bzaieub-537349543?$650_519_PNG$",
     tipo: "eletronicos",
   },
 ];
@@ -48,8 +83,8 @@ itens.map((item) => {
   pontosHTML.classList.add("pontos-item");
   const resgatarBtn = document.createElement("button");
   resgatarBtn.textContent = "Resgatar";
-  resgatarBtn.setAttribute("id", `resgatar-btn-${item.id}`)
-  card.setAttribute("id", `${item.id}`)
+  resgatarBtn.setAttribute("id", `resgatar-btn-${item.id}`);
+  card.setAttribute("id", `${item.id}`);
 
   nomeItemHTML.textContent = item.nome;
   imagemItemHTML.src = item.image;
@@ -114,13 +149,13 @@ pontosUserHTML.innerText = `Pontos: ${usuario.pontos}`;
 
 const resgatar = document.querySelectorAll(".card-item button");
 
-let botoesRegistrar = []
+let botoesRegistrar = [];
 
-let item1 = document.querySelector('#resgatar-btn-1')
-let item2 = document.querySelector('#resgatar-btn-2')
-let item3 = document.querySelector('#resgatar-btn-3')
-let item4 = document.querySelector('#resgatar-btn-4')
-let item5 = document.querySelector('#resgatar-btn-5')
+let item1 = document.querySelector("#resgatar-btn-1");
+let item2 = document.querySelector("#resgatar-btn-2");
+let item3 = document.querySelector("#resgatar-btn-3");
+let item4 = document.querySelector("#resgatar-btn-4");
+let item5 = document.querySelector("#resgatar-btn-5");
 
 // item1.addEventListener("click", (item)=>{
 //   console.log("to funfando")
@@ -133,30 +168,25 @@ let item5 = document.querySelector('#resgatar-btn-5')
 //     console.log(e.target.parentNode.querySelector('.pontos-item'))
 //   })
 // }
-resgatar.forEach((item)=>{
-  item.addEventListener("click",(e)=>{
-    console.log(e.target)
+resgatar.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    console.log(e.target);
     let pontosNecessarios = e.target.parentNode.querySelector(".pontos-item");
-    console.log(pontosNecessarios.textContent)
+    console.log(pontosNecessarios.textContent);
     let valorPontos = pontosNecessarios.textContent.split(":")[1].trim();
-    usuario.pontos-=valorPontos;
-    alert(`Você comprou ${item.parentElement.firstChild.textContent}`)
+    usuario.pontos -= valorPontos;
+    alert(`Você comprou ${item.parentElement.firstChild.textContent}`);
     pontosUserHTML.innerText = `Pontos: ${usuario.pontos}`;
-    localStorage.setItem("usuario", JSON.stringify(usuario))
-    console.log(usuario.pontos)
+    localStorage.setItem("usuario", JSON.stringify(usuario));
+    console.log(usuario.pontos);
+  });
+});
 
-  })
-})
-
-if(screen.width <= 767){
-  const botaoPesquisa = document.getElementById("#search-btn")
-  
+if (screen.width <= 767) {
+  const botaoPesquisa = document.getElementById("#search-btn");
 }
 
-
-
 //usuario.pontos -=
-
 
 // resgatar.forEach((this) => {
 //   this.addEventListener("click", (item) => {
@@ -178,4 +208,3 @@ if(screen.width <= 767){
 //   //   // console.log(pontosItemCard.textContent);
 //   // })
 // })
-
