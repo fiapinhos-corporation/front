@@ -64,7 +64,9 @@ let listaUsuario = [
 
 function cadastrar(inputNome, inputEmail, inputSenha,inputSenhaAux, inputCPF,inputEndereco,inputCEP,inputTelefone){
     let msgStatus = document.querySelector(".valida")
-
+  
+    let divCadastro = document.getElementById("divCadastro")
+    let divLogin = document.getElementById("divLogin")
     if(inputSenha.value == inputSenhaAux.value && inputSenha.value != "" && inputEmail.value != ""){
         msgStatus.setAttribute("class","sucesso");
         msgStatus.innerText = "Cadastro realizado com sucesso!";
@@ -85,6 +87,10 @@ function cadastrar(inputNome, inputEmail, inputSenha,inputSenhaAux, inputCPF,inp
         setTimeout(function(){
             msgStatus.setAttribute("class","valida");
             msgStatus.innerText = "";
+            divCadastro.classList.add("none")
+            if(divLogin.classList.contains("none")){
+              divLogin.classList.remove("none")
+            }
         }, 5000);
         return false;
     }
