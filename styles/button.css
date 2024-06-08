@@ -1,5 +1,5 @@
 @import url('./globals.css');
-button {
+.button, button {
     padding: 17px 56px;
     border: none;
     background-color: var(--third-color);
@@ -10,15 +10,19 @@ button {
     border-radius: 8px;
     transition: 0.6s ease-in-out;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
 }
 
-button:hover{
+.button:hover, button:hover{
     transition: 0.6s ease-in-out;
     transform: scale(1.1);
 }
 
 @media screen and (max-width: 767px) {
-    button{
+    .button, button{
         width: 150px;
         padding: 10px 20px;
         font-size: 16px;
