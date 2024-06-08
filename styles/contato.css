@@ -32,6 +32,11 @@
 #favDialog input:focus, #favDialog textarea:focus{
     outline: none;
 }
+#favDialog form div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
 
 #favDialog button{
     max-width: 150px;
